@@ -10,7 +10,7 @@
 
 <div id="bio">
 
-I study philosophy and programming. 
+I study philosophy and computer programming. 
 
 I am concerned for the wellbeing of the disadvantaged and for humanity's future.
 
@@ -18,20 +18,22 @@ I am seeking ways to use what I learn from my studies in order to care for my
 concerns.
 
 I have been studying philosophy in and out of academia for 17 years. My recent
-studies focus on the philosophy of logic, the philosophy of mathematics,
-phenomenology, semiotics, and the foundations of analytic philosophy.
-I have also studied German idealism, critical theory, literary theory,
-philosophy of language, and early modern philosophy.
+studies focus on the philosophy of logic, the philosophy of mathematics, the
+Kantian critical system, semiotics, and the foundations of analytic philosophy.
+I have also studied German idealism, critical theory, phenomenology, literary
+theory, philosophy of language, and early modern philosophy.
 
-I have been studying programming independently for three years. My study of
-programming languages has focused on the declarative paradigms of logic
-programming, functional programming, and constraint programming, though I have
-not entirely neglected imperative languages. I am also actively studying type
-theory and its computational applications as well as the general theory of
-computation. I have recently begun studying ways to make myself more marketable.
+I have been studying programming independently for five years. My study of
+programming languages has focused on the declarative paradigms of
+[logic programming](https://en.wikipedia.org/wiki/Logic_programming),
+[functional programming](https://en.wikipedia.org/wiki/Functional_programming),
+and
+[constraint programming](https://en.wikipedia.org/wiki/Constraint_programming),
+though I have not entirely neglected imperative languages. I am also actively
+studying type theory and its computational applications as well as the general
+theory of computation. I have recently begun studying ways to make myself more
+marketable.
 
-
-[Resume](resume)
 </div>
 
 <div id="epigraph" class="main-category">
@@ -68,19 +70,31 @@ the simple tokenization of text.
 library of Prolog syntax extensions, It is under irregular but ongoing
 development.
 
+### sml-utils
+
+[sml-utils](https://github.com/aBathologist/sml-utils) is an ongoing project. It
+is comprised of Standard ML modules (compatible with
+[SML/NJ](http://www.smlnj.org)) facilitating functionality that I have find
+useful or interesting during the course of my experiments with, and studies of,
+SML.
+
 ### /r/prolog
 
-[/f/prolog](https://www.reddit.com/r/prolog)
+I am a moderator of, and frequent contributor to,
+[/r/prolog](https://www.reddit.com/r/prolog). The subreddit is dedicated to logic
+programming generally, but it is dominated by slow motion discussions of Prolog.
+At the moment, the bulk of our activity focuses on helping beginners get acquainted
+with the language and work out their homework problems.
 
 ### /r/futurebeats
 
-[/f/futurebeats](https://www.reddit.com/r/futurebeats)
-
-### Customized Squarespace Websites
-
-- [Sharon Feder](http://sfeder.com)
-- [Scenic Production Inc.](http://www.scenicproductioninc.com/)
-- [Lanny DeVuono](http://www.lannydevuono.com/)
+I founded [/r/futurebeats](https://www.reddit.com/r/futurebeats), establishing
+the basic ethos, recruiting the initial moderators, and working out the core
+norms with the earliest community members. Since then, a group of active and
+talented moderators and contributers have built up a small online ecosystem,
+with the subreddit at its center. I continue to moderate and contribute to the
+community. Over the years, the subreddit has grown to over 60,000 subscribers
+and something like a musical genre has formed in relation to it.
 
 </div>
 
