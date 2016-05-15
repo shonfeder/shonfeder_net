@@ -110,7 +110,7 @@ This site is generated and served by [SWI-Prolog 7.3](http://www.swi-prolog.org/
 <div id="digital_presence">
 
 - <a href="https://twitter.com/ShonFeder" target="_blank" title="Twitter Profile"><img class="sm-link" alt="Icon made by http://www.icomoon.io from http://www.flaticon.com licensed under http://creativecommons.org/licenses/by/3.0/" src="f/media/twitter-logo.png"></a>
-- <a href="https://github.com/aBathologist" target="_blank" title="Github Profile"><img class="sm-link" src="f/media/gitHub-logo.png"></a>
+- <a href="https://github.com/aBathologist" target="_blank" title="Github Profile"><img class="sm-link" src="f/media/github-logo.png"></a>
 - <a href="http://stackoverflow.com/users/1187277/shon-feder" target="_blank" title="Stackoverflow Profile"><img class="sm-link" src="f/media/stackoverflow-logo.png"></a>
 - <a href="https://www.reddit.com/user/abathologist/" target="_blank" title="Reddit Profile"><img class="sm-link" src="f/media/reddit-logo.png"></a>
 - <a href="https://www.linkedin.com/in/shonfeder" target="_blank" title="LinkedIn Profile"><img class="sm-link" src="f/media/linkedin-logo.png"></a>

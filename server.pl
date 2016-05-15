@@ -8,8 +8,6 @@
 
 :- use_module(library(md/md_parse)).
 
-:- use_module('/Users/sf/Programming/prolog/swi/resumer/resume.pl').
-
 add_rel_search_path(Alias, directory) :-
     must_be(ground, Alias),
     prolog_load_context(directory, Path),
