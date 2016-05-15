@@ -50,19 +50,11 @@ files(Request) :-
     http_reply_from_files(Path, [], Request).
 
 home(_Request) :-
-    http_log('This works just like format ~w~n', ['Yeehaa']),
     reply_html_page(
             title('Shon Feder\'s Home Page'),
             [ \html_requires(files('js/basic.js')),
               \html_requires(files('styles/style.css')),
               \md_file(home) ]
-        ).
-
-resume(_Request) :-
-    http_log('What does this do?', []),
-    reply_html_page(
-            title('Shon Feder\'s Resume'),
-            \resume
         ).
 
 md(String) --> {md_parse_string(String, HTML)},
@@ -77,21 +69,3 @@ md_file(DirName) -->
         md_parse_file(File, HTML)
     },
     html(HTML).
-
-resume -->
-    html([dl(class=skill_set,
-             [
-                 dt("Languages"),
-                 dd([ul([li(class=[language, communication],
-                            'German : working proficiency'),
-                         li(class=[language, communication],
-                            'Spanish : beginner')
-                        ])
-                    ])
-             ])]).
-
-skill_set('Languages',
-          [
-              'German : working proficiency' : [language, communication],
-              'Spanish : beginner' : [language, communication]
-          ]).
