@@ -12,10 +12,10 @@
 
 I study philosophy and computer programming. 
 
-I am concerned for the wellbeing of the disadvantaged and for humanity's future.
+I am concerned for the well-being of the disadvantaged and for humanity's future.
 
-I am seeking ways to use what I learn from my studies in order to care for my
-concerns.
+I am working to apply what I learn from my studies to benefit those for whom I
+am concerned.
 
 I have been studying philosophy in and out of academia for 17 years. My recent
 studies focus on the philosophy of logic, the philosophy of mathematics, the
@@ -24,15 +24,11 @@ I have also studied German idealism, critical theory, phenomenology, literary
 theory, philosophy of language, and early modern philosophy.
 
 I have been studying programming independently for five years. My study of
-programming languages has focused on the declarative paradigms of
-[logic programming](https://en.wikipedia.org/wiki/Logic_programming),
-[functional programming](https://en.wikipedia.org/wiki/Functional_programming),
-and
-[constraint programming](https://en.wikipedia.org/wiki/Constraint_programming),
-though I have not entirely neglected imperative languages. I am also actively
-studying type theory and its computational applications as well as the general
-theory of computation. I have recently begun studying ways to make myself more
-marketable.
+programming languages has focused on the declarative paradigms of logic
+programming, functional programming, and constraint programming, though I have
+not entirely neglected imperative languages. I am also actively studying type
+theory and its computational applications as well as the general theory of
+computation. I have recently begun studying ways to make myself more marketable.
 
 </div>
 
