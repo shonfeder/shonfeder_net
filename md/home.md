@@ -62,15 +62,15 @@ after-school program at Ditmas Junior High. We provide students with tutoring
 and guidance on basic programming concepts, techniques, and technologies in a
 relaxed, fun environment. I helped launch this project in my capacity as the New
 York Cares Volunteer Team Leader. I coordinate the volunteers, tailor the
-curriculum to the needs of each individual student, and provide hands on
+curriculum to the needs of each individual student, and provide hands-on
 instruction and support on a weekly basis. The kids we work with are the
-sweetest you'll ever meet, and the project could always use more volunteers!
+sweetest you'll ever meet and the project could always use more volunteers!
 
 ### tokenize.pl
 
 [tokenize.pl](https://github.com/aBathologist/tokenize) is a simple Prolog
 tokenization utility. It provides a straightforward, and very limited, tool for
-the simple tokenization of text.
+the tokenization of text.
 
 ### protelog.pl
 
@@ -100,7 +100,7 @@ I founded [/r/futurebeats](https://www.reddit.com/r/futurebeats), establishing
 the basic ethos, recruiting the initial moderators, and working out the core
 norms with the earliest community members. Since then, a group of active and
 talented moderators and contributers have built up a small online ecosystem,
-with the subreddit at its center. I continue to moderate and contribute to the
+with this subreddit at its center. I continue to moderate and contribute to the
 community. Over the years, the subreddit has grown to over 60,000 subscribers
 and something like a musical genre has formed in relation to it.
 
