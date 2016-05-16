@@ -54,6 +54,18 @@ computation. I have recently begun studying ways to make myself more marketable.
 
 ## Projects
 
+### Coding Made Easy at IS 62 K (Ditmas)
+
+[Coding Made Easy at IS 62 K](https://www.newyorkcares.org/projects/coding-made-easy-62-k-ditmas-7)
+is a [New York Cares](https://www.newyorkcares.org/) project partnered with the
+after-school program at Ditmas Junior High. We provide students with tutoring
+and guidance on basic programming concepts, techniques, and technologies in a
+relaxed, fun environment. I helped launch this project in my capacity as the New
+York Cares Volunteer Team Leader. I coordinate the volunteers, tailor the
+curriculum to the needs of each individual student, and provide hands on
+instruction and support on a weekly basis. The kids we work with are the
+sweetest you'll ever meet, and the project could always use more volunteers!
+
 ### tokenize.pl
 
 [tokenize.pl](https://github.com/aBathologist/tokenize) is a simple Prolog
@@ -70,7 +82,7 @@ development.
 
 [sml-utils](https://github.com/aBathologist/sml-utils) is an ongoing project. It
 is comprised of Standard ML modules (compatible with
-[SML/NJ](http://www.smlnj.org)) facilitating functionality that I have find
+[SML/NJ](http://www.smlnj.org)) facilitating functionality that I have found
 useful or interesting during the course of my experiments with, and studies of,
 SML.
 
@@ -80,7 +92,7 @@ I am a moderator of, and frequent contributor to,
 [/r/prolog](https://www.reddit.com/r/prolog). The subreddit is dedicated to logic
 programming generally, but it is dominated by slow motion discussions of Prolog.
 At the moment, the bulk of our activity focuses on helping beginners get acquainted
-with the language and work out their homework problems.
+with the language and figure out their homework problems.
 
 ### /r/futurebeats
 
@@ -97,7 +109,7 @@ and something like a musical genre has formed in relation to it.
 
 <div id="powered_by">
 
-This site is generated and served by [SWI-Prolog 7.3](http://www.swi-prolog.org/).
+This site runs on [SWI-Prolog 7.3](http://www.swi-prolog.org/FAQ/PrologLAMP.txt).
 
 </div>
 
