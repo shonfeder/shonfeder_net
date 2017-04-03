@@ -10,7 +10,7 @@
 
 <div id="bio">
 
-I study philosophy and computer programming. 
+I study philosophy and computer programming.
 
 I am concerned for the well-being of the disadvantaged and for humanity's future.
 
@@ -42,8 +42,8 @@ computation. I have recently begun studying ways to make myself more marketable.
 > organized as programs, so that consequences of a complex set of assumptions
 > can be investigated by "running" the assumptions; that a conceptual solution
 > to a problem should be developed hand-in-hand with a working program that
-> demonstrates it and exposes its different aspects. 
-> 
+> demonstrates it and exposes its different aspects.
+>
 > &mdash; Sterling & Shapiro, *The Art of Prolog*
 
 </div>
@@ -54,17 +54,24 @@ computation. I have recently begun studying ways to make myself more marketable.
 
 ## Projects
 
+### Vyconf
+
+[Vyconf](https://github.com/vyos/vyconf) is a software appliance configuration
+framework written in OCaml and under development in connection with the network
+operating system [VyOS](https://vyos.io/). I have been contributing since
+February, 2017.
+
 ### Coding Made Easy at IS 62 K (Ditmas)
 
 [Coding Made Easy at IS 62 K](https://www.newyorkcares.org/projects/coding-made-easy-62-k-ditmas-7)
-is a [New York Cares](https://www.newyorkcares.org/) project partnered with the
-after-school program at Ditmas Junior High. We provide students with tutoring
-and guidance on basic programming concepts, techniques, and technologies in a
-relaxed, fun environment. I helped launch this project in my capacity as the New
-York Cares Volunteer Team Leader. I coordinate the volunteers, tailor the
-curriculum to the needs of each individual student, and provide hands-on
-instruction and support on a weekly basis. The kids we work with are the
-sweetest you'll ever meet and the project could always use more volunteers!
+was a [New York Cares](https://www.newyorkcares.org/) project partnered with the
+after-school program at Ditmas Junior High. Over the course of 14 weeks, we
+provided students with tutoring and guidance on basic programming concepts,
+techniques, and technologies in a relaxed and fun environment. I helped launch
+this project in my capacity as a New York Cares Volunteer Team Leader. I
+coordinated the volunteers, tailored the curriculum to the needs of each
+individual student, and provided hands-on instruction and support on a weekly
+basis.
 
 ### tokenize.pl
 
