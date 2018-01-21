@@ -10,25 +10,34 @@
 
 <div id="bio">
 
-I study philosophy and computer programming.
+I study and practice computer programming and philosophy.
 
 I am concerned for the well-being of the disadvantaged and for humanity's future.
 
 I am working to apply what I learn from my studies to benefit those for whom I
 am concerned.
 
-I have been studying philosophy in and out of academia for 17 years. My recent
-studies focus on the philosophy of logic, the philosophy of mathematics, the
-Kantian critical system, semiotics, and the foundations of analytic philosophy.
-I have also studied German idealism, critical theory, phenomenology, literary
-theory, philosophy of language, and early modern philosophy.
+My current work focuses on cultivating DevOps via deployment and process
+automation, tools development, and containerization in a Python environment. My
+current side-projects are in OCaml and Rust. I'm an amateur programming language
+theory enthusiast and co-organizer of [NYC N-Languages](https://www.meetup.com/nlanguages/).
 
-I have been studying programming independently for five years. My study of
-programming languages has focused on the declarative paradigms of logic
-programming, functional programming, and constraint programming, though I have
-not entirely neglected imperative languages. I am also actively studying type
-theory and its computational applications as well as the general theory of
-computation. I have recently begun studying ways to make myself more marketable.
+I have been studying programming independently since 2012, with a focus on the
+declarative paradigms of
+[logic programming](https://en.wikipedia.org/wiki/Logic_programming),
+[functional programming](https://en.wikipedia.org/wiki/Functional_programming),
+and [constraint programming](https://en.wikipedia.org/wiki/Constraint_programming).
+I am also actively studying type theory and its computational applications as
+well as the general theory of computation.
+
+My ongoing philosophical studies have recently been focused on the philosophy of
+logic (especially structuralist logic), the philosophy of mathematics
+(especially early 20th c., constructivism, and category-theoretic foundations),
+Kant's critical system (especially in relation to the modern axiomatic method
+and type theory), semiotics (especially the work of C.S. Peirce and Goguen's
+work in algebraic semiotics), and the foundations of analytic philosophy. I have
+also studied German idealism, critical theory, phenomenology, literary theory,
+philosophy of language, and early modern philosophy.
 
 </div>
 
@@ -52,14 +61,29 @@ computation. I have recently begun studying ways to make myself more marketable.
 
 <div id="projects" class="main-category">
 
-## Projects
+## Open Source Projects I've Contributed To
+
+### Eliom
+
+[Eliom](https://github.com/ocsigen/eliom) is an OCaml framework for
+client/server web apps. I've helped correct and improve some documentation.
 
 ### Vyconf
 
 [Vyconf](https://github.com/vyos/vyconf) is a software appliance configuration
 framework written in OCaml and under development in connection with the network
-operating system [VyOS](https://vyos.io/). I have been contributing since
-February, 2017.
+operating system [VyOS](https://vyos.io/). I made some contributions to the
+code that parses their config format.
+
+## Projects
+
+A few of these projects are completed. Several are dormant (but not dead).
+Several are still under active development.
+
+### Consolate
+
+[Consolate](https://github.com/shonfeder/consolate) is an ongoing (but paused)
+experiment in the modular design of modal console applications, written in OCaml.
 
 ### Coding Made Easy at IS 62 K (Ditmas)
 
@@ -77,7 +101,8 @@ basis.
 
 [tokenize.pl](https://github.com/aBathologist/tokenize) is a simple Prolog
 tokenization utility. It provides a straightforward, and very limited, tool for
-the tokenization of text.
+the tokenization of text. `tokenize.pl` is [available as a package](http://www.swi-prolog.org/pack/list?p=tokenize)
+from the standard SWI-Prolog package repository.
 
 ### protelog.pl
 
@@ -92,6 +117,12 @@ is comprised of Standard ML modules (compatible with
 [SML/NJ](http://www.smlnj.org)) facilitating functionality that I have found
 useful or interesting during the course of my experiments with, and studies of,
 SML.
+
+### The tilde.town web ring
+
+I was an active participant in the early days of
+[tilde.town](http://tilde.town/) and wrote most of the code for the
+[tilde.town web ring](https://github.com/aBathologist/tildetown_ring).
 
 ### /r/prolog
 
@@ -125,7 +156,7 @@ This site runs on [SWI-Prolog 7.3](http://www.swi-prolog.org/FAQ/PrologLAMP.txt)
 <div id="digital_presence">
 
 - <a href="https://twitter.com/ShonFeder" target="_blank" title="Twitter Profile"><img class="sm-link" alt="Icon made by http://www.icomoon.io from http://www.flaticon.com licensed under http://creativecommons.org/licenses/by/3.0/" src="f/media/twitter-logo.png"></a>
-- <a href="https://github.com/aBathologist" target="_blank" title="Github Profile"><img class="sm-link" src="f/media/github-logo.png"></a>
+- <a href="https://github.com/shonfeder" target="_blank" title="Github Profile"><img class="sm-link" src="f/media/github-logo.png"></a>
 - <a href="http://stackoverflow.com/users/1187277/shon-feder" target="_blank" title="Stackoverflow Profile"><img class="sm-link" src="f/media/stackoverflow-logo.png"></a>
 - <a href="https://www.reddit.com/user/abathologist/" target="_blank" title="Reddit Profile"><img class="sm-link" src="f/media/reddit-logo.png"></a>
 - <a href="https://www.linkedin.com/in/shonfeder" target="_blank" title="LinkedIn Profile"><img class="sm-link" src="f/media/linkedin-logo.png"></a>
