@@ -17,26 +17,26 @@ I am concerned for the well-being of the disadvantaged and for humanity's future
 I am working to apply what I learn from my studies to benefit those for whom I
 am concerned.
 
-My current work focuses on cultivating DevOps via deployment and process
-automation, tools development, and containerization in a Python environment. My
-current side-projects are in OCaml and Rust. I'm an amateur programming language
-theory enthusiast and co-organizer of [NYC N-Languages](https://www.meetup.com/nlanguages/).
+My current work focuses on applying principles of functional programming and
+type driven design to improve development, build, and release infrastructure.
+Our watchwords are determinism, reliability, reproducibility, and receptivity.
 
-I have been studying programming independently since 2012, with a focus on the
-declarative paradigms of
+My active side-projects involve writing programs in OCaml and doing research at
+the intersection of programming language theory, type theory, critical
+philosophy, semiotics, and cybernetics.
+
+My studies of programming have been focused on the declarative paradigms of
 [logic programming](https://en.wikipedia.org/wiki/Logic_programming),
 [functional programming](https://en.wikipedia.org/wiki/Functional_programming),
 and [constraint programming](https://en.wikipedia.org/wiki/Constraint_programming).
-I am also actively studying type theory and its computational applications as
-well as the general theory of computation.
 
-My ongoing philosophical studies have recently been focused on the philosophy of
-logic (especially structuralist logic), the philosophy of mathematics
-(especially early 20th c., constructivism, and category-theoretic foundations),
-Kant's critical system (especially in relation to the modern axiomatic method
-and type theory), semiotics (especially the work of C.S. Peirce and Goguen's
-work in algebraic semiotics), and the foundations of analytic philosophy. I have
-also studied German idealism, critical theory, phenomenology, literary theory,
+My philosophical studies have recently been focused on the philosophy of logic
+(especially structuralist logic), the philosophy of mathematics (especially
+early 20th c., constructivism, and category-theoretic foundations), Kant's
+critical system (especially in relation to the modern axiomatic method and type
+theory), semiotics (especially the work of C.S. Peirce and Goguen's work in
+algebraic semiotics), and the foundations of analytic philosophy. I have also
+studied German idealism, critical theory, phenomenology, literary theory,
 philosophy of language, and early modern philosophy.
 
 </div>
@@ -63,6 +63,17 @@ philosophy of language, and early modern philosophy.
 
 ## Open Source Projects I've Contributed To
 
+### Dune
+
+[Dune](https://github.com/ocaml/dune) is "a composable build system for OCaml".
+I've contributed to the design and implementation of the CLI tooling.
+
+### ATD
+
+[ATD](https://github.com/mjambon/atd) "stands for Adaptable Type Definitions. It
+is a syntax for defining cross-language data types" written in OCaml. I extended
+a small language feature.
+
 ### Eliom
 
 [Eliom](https://github.com/ocsigen/eliom) is an OCaml framework for
@@ -72,13 +83,19 @@ client/server web apps. I've helped correct and improve some documentation.
 
 [Vyconf](https://github.com/vyos/vyconf) is a software appliance configuration
 framework written in OCaml and under development in connection with the network
-operating system [VyOS](https://vyos.io/). I made some contributions to the
-code that parses their config format.
+operating system [VyOS](https://vyos.io/). I contributed to the
+code that parses the VyOS configuration language.
 
 ## Projects
 
 A few of these projects are completed. Several are dormant (but not dead).
 Several are still under active development.
+
+### My Synechepedia
+
+[My Synechepedia](https://shonfeder.github.io/index.html) is a
+scrapbook/log/personal-wiki/homepage collecting notes, ideas, plans, excerpts
+and records of my activities.
 
 ### Consolate
 
