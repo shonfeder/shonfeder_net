@@ -1,0 +1,6 @@
+(executable
+ (public_name shonfeder_net)
+ (name main)
+ ; (libraries shonfeder_net opium core_kernel markdown tyxml)
+ (preprocess
+  (pps ppx_deriving.std)))

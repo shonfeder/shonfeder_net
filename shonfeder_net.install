@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/shonfeder_net/META"
+  "_build/install/default/lib/shonfeder_net/dune-package"
+  "_build/install/default/lib/shonfeder_net/opam"
+]
+bin: [
+  "_build/install/default/bin/shonfeder_net"
+]
