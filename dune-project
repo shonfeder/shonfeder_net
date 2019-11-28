@@ -22,15 +22,19 @@
   (ocaml (>= 4.08.0))
   ;; inc to v13 once opium can support
   (core_kernel (and (>= v0.12.0) (< v0.13.0)))
-  (markdown (>= 0.2.1))
+
+  (opium (>= 0.17.1))
+  (omd (>= 1.3.1))
   (tyxml (>= 4.3.0))
+  (tyxml-ppx (>= 4.3.0))
+  (logs (>= 0.7.0))
+  (fpath (>= 0.7.2))
 
   ; (js_of_ocaml (>= 3.4.0))
   ; (js_of_ocaml-ppx (>= 3.4.0))
   ; (js_of_ocaml-ppx_deriving.std_json (>= 3.4.0))
   ; (js_of_ocaml-lwt (>= 3.4.0))
 
-  (opium (>= 0.17.1))
 
   (ppx_deriving (>= 4.4))
 
