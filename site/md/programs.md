@@ -1,0 +1,84 @@
+<div class="expose">
+
+> We believe that programming can be, and should be, an intellectually rewarding
+> activity; that a good programming language is a powerful conceptual tool
+> &mdash; a tool for organizing, expressing, experimenting with, and even
+> communicating one's thoughts ... we think that programming can be, and should
+> be, part of the problem solving process itself; that thoughts should be
+> organized as programs, so that consequences of a complex set of assumptions
+> can be investigated by "running" the assumptions; that a conceptual solution
+> to a problem should be developed hand-in-hand with a working program that
+> demonstrates it and exposes its different aspects.
+>
+> (Sterling & Shapiro, *The Art of Prolog*)
+
+# Published
+
+## [alg_structs](https://github.com/shonfeder/alg_structs): Algebraic structures in OCaml Structs
+
+- [API documentation](https://shonfeder.github.io/alg_structs/)
+- [package](https://opam.ocaml.org/packages/alg_structs/)
+
+## [tokenize.pl](https://github.com/aBathologist/tokenize): Tokenization library for SWI-Prolog balancing simplicity and flexibility 
+
+- [API documentation](https://www.swi-prolog.org/pack/file_details/tokenize/prolog/tokenize.pl)
+- [package](https://www.swi-prolog.org/pack/list?p=tokenize)
+
+# OSS Contributions
+
+## [dune](https://github.com/ocaml/dune): OCaml's composable build system
+
+- Designed and implemented the `init` subcommand
+
+## [aws_ssm_provider](https://github.com/caredox/aws_ssm_provider): A configuration provider for Elixir handling AWS SSM parameters
+
+- Rewrote library adhering to functional principles for compatibility with Elixir 1.9
+
+## [ATD](https://github.com/mjambon/atd): "Adaptable Type Definitions"
+
+- Extended some small language features and fixed some bugs
+
+## [Eliom](https://github.com/ocsigen/eliom): OCaml framework for client/server web apps. 
+
+- Helped correct and improve documentation.
+
+## [Vyconf](https://github.com/vyos/vyconf): A software appliance configuration framework written in OCaml
+
+- Contributed to the parser for the VyOS configuration language.
+
+## [tilde.town web ring](https://github.com/aBathologist/tildetown_ring): Linking  the townies of [tilde.town](http://tilde.town/)
+
+- I wrote most of the code for the webring as an active participant of the early days.
+
+# Unpublished | WIP
+
+## [ND Project](https://github.com/shonfeder/nd_project): A pedagogical web toy for learning Gentzen’s natural deduction
+
+- Fullstack, reactive OCaml using [`Opium`](https://github.com/rgrinberg/opium),
+  [`Js_of_ocaml`](https://github.com/ocsigen/js_of_ocaml), and
+  [`incr_dom`](https://github.com/janestreet/incr_dom).
+
+## [These](https://github.com/shonfeder/these): A Type for inclusive disjunction
+
+- An OCaml port of Haskell's
+  [Data.These](http://hackage.haskell.org/package/these-1.0.1/docs/Data-These.html)
+  and [Data.Align](https://hackage.haskell.org/package/these-0.7.3/docs/Data-Align.html).
+- Uses the structures supplied by [alg_structs](/programs)
+
+## [OCOBS](https://github.com/shonfeder/ocobs): COBS (Consistent Overhead Byte Stuffing) in OCaml
+
+- [COBS](https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing) is "a
+framing method for binary streams and is useful any time you need to send binary
+datagrams over a stream interface"  
+- Inspired by [nim_cobs](https://github.com/keyme/nim_cobs)
+- My property based testing for this implementation revealed a bug in `nim_cobs`.
+
+## [Consolate](https://github.com/shonfeder/consolate): What if everything where a multiplexer?
+
+- An experiment in modular design of modal console applications. 
+
+## [protelog.pl](https://github.com/aBathologist/protelog): Experiments with Prolog syntax extensions
+
+- Macros to modernize powerful prolog idioms
+
+</div>

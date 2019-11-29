@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:200);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/************/
+/* DOCUMENT */
+/************/
+
+html {
+  font-size : 1.1em;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+h1 {
+  font-size : 2em;
+  margin-top : 35px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h2 {
+  font-size : 1.4em;
+  font-weight : 500;
+}
+
+a {
+  color: #3c6ebf;
+  text-decoration: underline dotted;
+}
+
+a:visited {
+  color: #464646;
+}
+
+a:active {
+  color: #b0004a;
+}
+
+blockquote{
+  display:block;
+  /* padding: 15px 20px 15px 20px; */
+  /* margin-left: 10vh; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60vh;
+  padding-top: 0.5em;
+  position: relative;
+  font-size : .9em;
+  text-align: justify;
+}
+
+blockquote:before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: -0.8em;
+  top:0;
+  color : lightgray
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  position : fixed;
+  width : 100%;
+  left : 0px;
+  top : 0px;
+  height : 120px;
+  background-color : white;
+  z-index : 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo {
+  width : 76px;
+} 
+
+#header.active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+}
+
+#author-title {
+  margin-left: .5em;
+  margin-bottom: 0;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  margin-left: .2em;
+  margin-right: .2em;
+}
+
+nav a {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #464646;
+  text-decoration: none;
+}
+
+nav .current {
+  text-decoration: #b0004a double underline;
+}
+
+#logo.current {
+  border-bottom-color: #b0004a;
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+}
+/********/
+/* BODY */
+/********/
+
+.main {
+  margin-top: 120px;
+  margin-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+#statement {
+  /* padding : 10px 50px 10px 50px; */
+}
+
+#statement + * {
+  clear : both;
+}
+
+#bio {
+  max-width : 40%;
+  min-width : 300px;
+  float : left;
+}
+
+#epigraph {
+  float : right;
+  width : 400px;
+  color : gray; 
+  padding-top : 1px;
+  padding-right : 150px;
+  text-align : justify;
+}
+
+#projects {
+  width : 53%; 
+}
+
+#projects h3 {
+  margin-left : 25px;
+}
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  position : fixed;
+  bottom : 0px;
+  left : 0px;
+  background-color : white;
+  padding-top : 15px;
+  margin-bottom : 0;
+  padding-bottom : 0;
+  width : 100%;
+  max-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer.active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+}
+
+.social-media-link {
+  max-width : 35px;
+}
+
+
+.digital-presence {
+  padding : 0;
+  margin : 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.digital-presence > * {
+  padding : 0;
+  margin : 0;
+}
+
+.digital-presence {
+  list-style-type : none;
+}
+
+.digital-presence > li {
+  display : flex;
+  padding: 5px;
+}
+
+#signature {
+  display: flex;
+  font-size : 0.8em;
+  list-style-type: none;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#signature > li + li::before {
+  content: '\2022';
+  padding: .5em;
+}
+
+/*********/
+/* PAGES */
+/*********/
+
+.expose h1 {
+  font-size: 1.2em;
+}
+
+.expose h2 {
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.expose h2 > a {
+  font-weight: 600;
+}
+.expose ul {
+  margin-top: 0;
+}
+
+.expose ul > li {
+  list-style-type: none;
+}
+
+.expose ul > li::before {
+  content: '\25B9';
+  margin-right: .5em;
+  margin-left: -1em;
+  color: #b0004a;
+  font-weight: 800
+}
+
+#resume {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh; 
+}
