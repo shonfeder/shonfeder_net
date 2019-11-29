@@ -1,0 +1,18 @@
+#+TITLE: Design Notes
+
+* Tasks
+** TODO Illustrative organization of how parts of my life connect on splash page
+** DONE Static resources
+** DONE Navigation
+** DONE Markdown rendering
+** DONE Pages
+*** DONE Programs
+*** DONE Projects
+*** DONE Posts
+*** DONE Profile
+*** DONE Resume
+**** Embedded PDF
+**** Interactive, filterable resume
+** TODO Consolidated feed of all relevant internet presence
+** DONE Proof read
+** TODO Deploy
