@@ -1,5 +1,5 @@
 (library
  (name shonfeder_net)
- (libraries opium core_kernel markdown tyxml)
+ (libraries opium core_kernel omd tyxml fpath)
  (preprocess
-  (pps ppx_deriving.std)))
+  (pps ppx_deriving.std tyxml-ppx)))
