@@ -115,6 +115,7 @@ module Make (Config : Config.S) = struct
       [ link ~rel:[`Stylesheet] ~href:"/styles/style.css" ()
       ; script
       ; meta ~a:[a_charset "utf-8"] ()
+      ; meta ~a:[a_name "viewport"; a_content "width=device-width, initial-scale=1"] ()
       ]
 
   let body' header' content =
