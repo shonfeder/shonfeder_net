@@ -1,13 +1,13 @@
 <div class="expose">
 
 > Community necessarily takes place in what Blanchot has called “unworking,”
-> referring to that which, before or beyond the work, withdraws from the work, and
-> which, no longer having to do either with production or with completion,
+> referring to that which, before or beyond the work, withdraws from the work,
+> and which, no longer having to do either with production or with completion,
 > encounters interruption, fragmentation, suspension. Community is made of the
 > interruption of singularities, or of the suspension that singular beings are.
 > Community is not the work of singular beings, for community is simply their
 > being–their being suspended upon its limit. Communication is the unworking of
-> work that is social, economic, technical, and institutional. ## Projects
+> work that is social, economic, technical, and institutional.
 > 
 > (Jean-Luc Nancy, *The Inoperative Community*)
 
