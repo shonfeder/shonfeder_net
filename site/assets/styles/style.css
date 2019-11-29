@@ -41,8 +41,8 @@ a:active {
 
 blockquote{
   display:block;
-  /* padding: 15px 20px 15px 20px; */
-  /* margin-left: 10vh; */
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-left: auto;
   margin-right: auto;
   max-width: 60vh;
@@ -61,8 +61,8 @@ blockquote:before {
   
   /*Positioning*/
   position: absolute;
-  left: -0.8em;
-  top:0;
+  left: -0.2em;
+  top: 0.4em;
   color : lightgray
 }
 
@@ -102,6 +102,10 @@ header {
   margin-bottom: 0;
 }
 
+/*******/
+/* NAV */
+/*******/
+
 nav > ul {
   display: flex;
   flex-direction: row;
@@ -125,7 +129,10 @@ nav a {
 }
 
 nav .current {
-  text-decoration: #b0004a double underline;
+  border-bottom-color: #b0004a;
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+
 }
 
 #logo.current {
@@ -143,10 +150,6 @@ nav .current {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-}
-
-#statement {
-  /* padding : 10px 50px 10px 50px; */
 }
 
 #statement + * {
