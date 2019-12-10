@@ -1,18 +1,70 @@
 #+TITLE: Design Notes
 
+* Deployment
+** Initial deployment
+
+Currently deployed as a simple opam package.
+Assuming opam is installed an initialized, a fresh instance can be deployed as
+follows:
+
+#+BEGIN_SRC sh
+git clone https://github.com/shonfeder/shonfeder_net.git
+cd shonfeder_net
+opam switch create . # ocaml-base-compiler.4.08.1
+shonfeder_net
+#+END_SRC
+
+This will start the server running on the default port =3000=.
+
+** As a systemd service
+On my "production" VPS, the server is run as a systemd unit, defined in
+=/etc/systemd/system/shonfeder_net.service=.
+
+- To start/stop the service :: =sudo systemctl (start|stop) shonfeder_net=
+- To enable/disable the service :: =sudo systemctl (enable|disable) shonfeder_net.service=
+
+** Updating
+#+BEGIN_SRC sh
+cd ~/shonfeder_net
+git pull
+#+END_SRC
+
+If only static content has been updated, you're done. Otherwise
+
+#+BEGIN_SRC sh
+sudo systemctl restart shonfeder_net.service
+#+END_SRC
+
 * Tasks
-** TODO Illustrative organization of how parts of my life connect on splash page
-** DONE Static resources
-** DONE Navigation
-** DONE Markdown rendering
-** DONE Pages
-*** DONE Programs
-*** DONE Projects
-*** DONE Posts
-*** DONE Profile
-*** DONE Resume
-**** Embedded PDF
-**** Interactive, filterable resume
-** TODO Consolidated feed of all relevant internet presence
-** DONE Proof read
-** TODO Deploy
+** Content
+*** TODO Illustrative organization of how parts of my life connect on splash page
+*** DONE Static resources
+*** DONE Navigation
+*** DONE Markdown rendering
+*** DONE Pages
+**** DONE Programs
+**** DONE Projects
+**** DONE Posts
+**** DONE Profile
+**** DONE Resume
+***** Embedded PDF
+***** Interactive, filterable resume
+*** TODO Consolidated feed of all relevant internet presence
+*** DONE Proof read
+** Server
+*** TODO Set up caching
+*** TODO Set up HTTPS
+** Deployment
+*** DONE Deploy
+*** TODO Set up ci/cd so new updates to source are propagated to server automatically
+**** Monitor remote repo
+**** On changes to source, pull
+**** If change is in =./site= dir, finished
+**** Otherwise rebuild and restart
+- =opam intall .=
+- =sudo systemctl restart shonfeder_net.service=
+
+*** TODO Document
+*** TODO Set up DNS routing
+*** TODO Set up monitoring and alerts
+*** TODO Set up
