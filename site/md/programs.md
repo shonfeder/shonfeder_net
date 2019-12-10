@@ -19,7 +19,7 @@
 - [API documentation](https://shonfeder.github.io/alg_structs/)
 - [package](https://opam.ocaml.org/packages/alg_structs/)
 
-## [tokenize.pl](https://github.com/aBathologist/tokenize): Tokenization library for SWI-Prolog balancing simplicity and flexibility 
+## [tokenize.pl](https://github.com/aBathologist/tokenize): Tokenization library for SWI-Prolog balancing simplicity and flexibility
 
 - [API documentation](https://www.swi-prolog.org/pack/file_details/tokenize/prolog/tokenize.pl)
 - [package](https://www.swi-prolog.org/pack/list?p=tokenize)
@@ -38,7 +38,7 @@
 
 - Extended some small language features and fixed some bugs
 
-## [Eliom](https://github.com/ocsigen/eliom): OCaml framework for client/server web apps. 
+## [Eliom](https://github.com/ocsigen/eliom): OCaml framework for client/server web apps.
 
 - Helped correct and improve documentation.
 
@@ -68,14 +68,14 @@
 ## [OCOBS](https://github.com/shonfeder/ocobs): COBS (Consistent Overhead Byte Stuffing) in OCaml
 
 - [COBS](https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing) is "a
-framing method for binary streams and is useful any time you need to send binary
-datagrams over a stream interface"  
-- Inspired by [nim_cobs](https://github.com/keyme/nim_cobs)
+  framing method for binary streams and is useful any time you need to send
+  binary datagrams over a stream interface" - Inspired by
+  [nim_cobs](https://github.com/keyme/nim_cobs)
 - My property based testing for this implementation revealed a bug in `nim_cobs`.
 
 ## [Consolate](https://github.com/shonfeder/consolate): What if everything where a multiplexer?
 
-- An experiment in modular design of modal console applications. 
+- An experiment in modular design of modal console applications.
 
 ## [protelog.pl](https://github.com/aBathologist/protelog): Experiments with Prolog syntax extensions
 

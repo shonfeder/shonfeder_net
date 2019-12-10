@@ -39,7 +39,7 @@ hands-on instruction and support in the classroom on a weekly basis.
 - I founded the subreddit, established its core ethos and norms, and recruited the
 initial team of moderators. I was heavily involved in supporting and nurturing
 the community for several years. A group of active and talented moderators and
-contributers have built up a small, but vibrant online ecosystem with this
+contributors have built up a small, but vibrant online ecosystem with this
 subreddit at its center. I continue to moderate and contribute to the community
 at a low frequency.
 - Currently home to a community of nearly 100k subscribers

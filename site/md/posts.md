@@ -11,4 +11,4 @@
 > (Martin Heidegger, *The Question Concerning Technology*)
 </div>
 
-*Comming soon...*
+*Coming soon...*
