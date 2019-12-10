@@ -9,6 +9,12 @@
 > of technology.
 >
 > (Martin Heidegger, *The Question Concerning Technology*)
+
+## [Finishing Work on the Incomplete][1] -- 2019-11-05
+
+- A meditation on the difference between finishing and completing
+
+[1]: https://shonfeder.github.io/themata/finishing-the-incomplete.html
+
 </div>
 
-*Coming soon...*
