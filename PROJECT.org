@@ -38,6 +38,8 @@ sudo systemctl restart shonfeder_net.service
 * Tasks
 ** Content
 *** TODO Illustrative organization of how parts of my life connect on splash page
+*** TODO Link to gitlab
+*** TODO Consolidated feed of all relevant internet presence
 *** DONE Static resources
 *** DONE Navigation
 *** DONE Markdown rendering
@@ -49,7 +51,6 @@ sudo systemctl restart shonfeder_net.service
 **** DONE Resume
 ***** Embedded PDF
 ***** Interactive, filterable resume
-*** TODO Consolidated feed of all relevant internet presence
 *** DONE Proof read
 ** Server
 *** TODO Set up caching
