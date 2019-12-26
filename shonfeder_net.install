@@ -6,3 +6,6 @@ lib: [
 bin: [
   "_build/install/default/bin/shonfeder_net"
 ]
+doc: [
+  "_build/install/default/doc/shonfeder_net/README.org"
+]
