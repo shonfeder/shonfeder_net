@@ -5,12 +5,9 @@
 (version 0.1.0)
 
 (authors "Shon Feder")
-; (license MIT)
-; (source (github shonfeder/alg_structs))
+(source (github shonfeder/shonfeder_net))
 (maintainers "shon.feder@gmail.com")
-; (homepage "https://github.com/shonfeder/alg_structs")
-; (bug_reports "https://github.com/shonfeder/alg_structs/issues")
-; (documentation "https://shonfeder.github.io/alg_structs/")
+(homepage "https://github.com/shonfeder/shonfeder_net")
 
 (package
  (name shonfeder_net)
@@ -30,14 +27,6 @@
   (logs (>= 0.7.0))
   (fpath (>= 0.7.2))
 
-  ; (js_of_ocaml (>= 3.4.0))
-  ; (js_of_ocaml-ppx (>= 3.4.0))
-  ; (js_of_ocaml-ppx_deriving.std_json (>= 3.4.0))
-  ; (js_of_ocaml-lwt (>= 3.4.0))
-
 
   (ppx_deriving (>= 4.4))
-
-  ; (qcheck (>= 0.12))
-  ; (qcheck-alcotest (>= 0.12))
 ))
