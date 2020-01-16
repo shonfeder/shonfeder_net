@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shonfeder
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://shonfeder.net
+  * I am shonfeder (https://keybase.io/shonfeder) on keybase.
+  * I have a public key ASBDCrS3OyOBp9UsG6Hfu6NSm0zYEubj7ErZJjNSRyqe7wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120430ab4b73b2381a7d52c1ba1dfbba3529b4cd812e6e3ec4ad9263352472a9eef0a",
+      "host": "keybase.io",
+      "kid": "0120430ab4b73b2381a7d52c1ba1dfbba3529b4cd812e6e3ec4ad9263352472a9eef0a",
+      "uid": "e2d833c8f23e34c077d1e708a2c0df19",
+      "username": "shonfeder"
+    },
+    "merkle_root": {
+      "ctime": 1579205840,
+      "hash": "1e4ea30cff26d5c86ce49b8a51f5947bf6947880a31a6f22ceecb2a834571a0093cb198d069e9f29db1ac8d1cb16696f5cda3aac86e1f337487e27f39cfab38b",
+      "hash_meta": "5aa99d150b8dbe50371aa6b5b5f5cb0919fc231d3aabb727871567d80327e9ce",
+      "seqno": 14255080
+    },
+    "service": {
+      "entropy": "tvuW4rYuiTyDyHk1fvTn5Gdr",
+      "hostname": "shonfeder.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579205853,
+  "expire_in": 504576000,
+  "prev": "b9afe500620a9a30e8124233b370d608d67f2dc9d2f06c80f04bb7eb6594d12b",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQwq0tzsjgafVLBuh37ujUptM2BLm4+xK2SYzUkcqnu8Kp3BheWxvYWTESpcCCcQgua/lAGIKmjDoEkIzs3DWCNZ/LcnS8GyA8Eu362WU0SvEIAX092Dzl67ZNkr9WI63NcTdwKXFL9ZIr4m42hQH3emkAgHCo3NpZ8RALs0mlZQMp8mJ/6Y/CjVjZ9tJgBpKSvjvHnmfB5jZz2Na5nxlPha94fA69mfU8QwtNSvbIdv58VQZVO44YNsqA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJkcKdq4f/bfPf1YF9olga0oWBwWDTQSkvaQavLS1pTQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shonfeder
+
+==================================================================
