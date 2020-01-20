@@ -28,27 +28,20 @@
 
 ## [dune](https://github.com/ocaml/dune): OCaml's composable build system
 
+- Member of the dune development team
 - Designed and implemented the `init` subcommand
 
 ## [aws_ssm_provider](https://github.com/caredox/aws_ssm_provider): A configuration provider for Elixir handling AWS SSM parameters
 
-- Rewrote library adhering to functional principles for compatibility with Elixir 1.9
+- Rewrote library to adhere to functional principles for compatibility with Elixir 1.9
 
 ## [ATD](https://github.com/mjambon/atd): "Adaptable Type Definitions"
 
-- Extended some small language features and fixed some bugs
-
-## [Eliom](https://github.com/ocsigen/eliom): OCaml framework for client/server web apps.
-
-- Helped correct and improve documentation.
+- Extended some small language features and hepled with bug fixes
 
 ## [Vyconf](https://github.com/vyos/vyconf): A software appliance configuration framework written in OCaml
 
 - Contributed to the parser for the VyOS configuration language.
-
-## [tilde.town web ring](https://github.com/aBathologist/tildetown_ring): Linking  the townies of [tilde.town](http://tilde.town/)
-
-- I wrote most of the code for the webring as an active participant of the early days.
 
 # Unpublished | WIP
 
