@@ -39,7 +39,13 @@ sudo systemctl restart shonfeder_net.service
 ** Content
 *** TODO Illustrative organization of how parts of my life connect on splash page
 *** TODO Link to gitlab
-*** TODO Consolidated feed of all relevant internet presence
+*** TODO Consolidated feed of all relevant internet presence [/]
+- [ ] Twitter
+- [ ] Reddit
+- [ ] Github
+- [ ] Gitlab
+- [ ] Wikipedia
+- [ ] StackOverflow
 *** DONE Static resources
 *** DONE Navigation
 *** DONE Markdown rendering
