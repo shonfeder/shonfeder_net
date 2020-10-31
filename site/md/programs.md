@@ -26,6 +26,19 @@
 
 # OSS Contributions
 
+## [Apalache](https://github.com/informalsystems/apalache): A symbolic model checker for TLA+
+
+- Member of the Apalache dev team at [informal.systems](https://informal.systems/).
+- Contributed to implementation of the type system.
+- Build and release engineering.
+- Documentation drafting, maintaining, and editing.
+
+## [themis-contract](https://github.com/informalsystems/themis-contract): A command line-based parameterized contracting tool
+
+- Member of distributed orgs team at [informal.systems](https://informal.systems/).
+- Requirements gathering, specification, design, and implementation.
+- Project management.
+
 ## [dune](https://github.com/ocaml/dune): OCaml's composable build system
 
 - Member of the dune development team
