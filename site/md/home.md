@@ -18,7 +18,7 @@ Theory](https://en.wikipedia.org/wiki/Programming_language_theory). Leveraging
 my training in philosophy and literary theory, I evolve coherent designs
 responsive to user's genuine needs. My methodology combines systematic analysis
 and type-driven modeling of the problem domain together with compassionate
-communication with users. In my years of working experience as a software
+communication and participatory design. In my years of experience as a software
 engineer, I have learned to implement, document, and deploy the resulting
 programs reliably and efficiently.
 
