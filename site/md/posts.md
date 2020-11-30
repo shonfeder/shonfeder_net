@@ -10,6 +10,11 @@
 >
 > (Martin Heidegger, *The Question Concerning Technology*)
 
+## [Configuration Files in Terms of User Empowerment][3] -- 2020-11-30
+
+- An argument for safe, programmable configuration formats, based on a framing
+  of configuration as a way of empowering users.
+
 ## [A Lightweight OCaml Webapp Tutorial][2] -- 2020-01-05
 
 - A boring, backend-only webapp using Opium, Caqti, and Tyxml
@@ -18,6 +23,7 @@
 
 - A meditation on the difference between finishing and completing
 
+[3]: https://informal.systems/2020/10/28/configuration-file-formats/
 [2]: https://shonfeder.gitlab.io/ocaml_webapp/
 [1]: https://shonfeder.github.io/themata/finishing-the-incomplete.html
 
