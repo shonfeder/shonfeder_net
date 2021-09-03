@@ -7,7 +7,7 @@
 > (W.V.O. Quine, *Quiddities*)
 
 I study [programming](/programs) and [philosophy](/posts) and [work as a
-software engineer](/resume) as [informal.systems](https://informal.systems/).
+software engineer](/resume) at [informal.systems](https://informal.systems/).
 
 Guided by concern for the well being of the disadvantaged and for humanity's
 future, I work at applying what I can learn in my studies to benefit those in
