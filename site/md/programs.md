@@ -36,6 +36,11 @@
 
 # OSS Contributions
 
+## [omd](https://github.com/ocaml/omd): extensible Markdown library and tool in pure OCaml
+
+- (Volunteer) maintainer
+- Have helped guide key design decisions since 2021
+
 ## [Apalache](https://github.com/informalsystems/apalache): A symbolic model checker for TLA+
 
 - Member of the Apalache dev team at [informal.systems](https://informal.systems/).
