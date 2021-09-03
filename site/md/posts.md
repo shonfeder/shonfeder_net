@@ -19,13 +19,18 @@
 
 - A boring, backend-only webapp using Opium, Caqti, and Tyxml
 
+## [On Encyclopedias][4] -- 2019-12-30
+
+- A note on encyclopedias, and wikipedia, and the mounting "mountain of facts".
+
 ## [Finishing Work on the Incomplete][1] -- 2019-11-05
 
 - A meditation on the difference between finishing and completing
 
+[4]: https://shonfeder.github.io/themata/encyclopedia.html
 [3]: https://informal.systems/2020/10/28/configuration-file-formats/
 [2]: https://shonfeder.gitlab.io/ocaml_webapp/
-[1]: https://shonfeder.github.io/themata/finishing-the-incomplete.html
+[1]: https://shonfeder.github.io/themata/work/finishing-the-incomplete.html
 
 </div>
 

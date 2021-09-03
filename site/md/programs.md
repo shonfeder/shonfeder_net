@@ -14,6 +14,16 @@
 
 # Published
 
+## [um-abt](https://github.com/shonfeder/um-abt): An OCaml library implementing unifiable abstract binding trees (UABTs)
+
+- [API documentation](https://shonfeder.github.io/um-abt/um-abt/Abt/index.html)
+- [package](http://opam.ocaml.org/packages/um-abt/um-abt.0.1.5/)
+
+## [emojitsu](https://github.com/shonfeder/emojitsu): Tiny executable techniques for dealing with emoji
+
+- [documentation](https://github.com/shonfeder/emojitsu#cli-usage)
+- [release](https://github.com/shonfeder/emojitsu/releases)
+
 ## [alg_structs](https://github.com/shonfeder/alg_structs): Algebraic structures in OCaml Structs
 
 - [API documentation](https://shonfeder.github.io/alg_structs/)
