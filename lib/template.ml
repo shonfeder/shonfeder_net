@@ -44,11 +44,7 @@ module Make (Config : Config.S) = struct
       a ~a:[a_href href; a_title title; a_target "_blank"] [img ~a:[a_class ["social-media-link"]] ~alt ~src ()]
     in
     let links =
-      [ link "https://twitter.com/shonfeder"
-          ~title:"Twitter Profile"
-          ~src:"/media/twitter-logo.png"
-          ~alt:"Twitter icon. (Made by http://www.icomoon.io from http://www.flaticon.com licensed under http://creativecommons.org/licenses/by/3.0/)";
-        link "https://github.com/shonfeder"
+      [ link "https://github.com/shonfeder"
           ~title:"Github Profile"
           ~src:"/media/github-logo.png"
           ~alt:"GitHub logo";
@@ -56,10 +52,6 @@ module Make (Config : Config.S) = struct
           ~title:"StackOverflow Profile"
           ~src:"/media/stackoverflow-logo.png"
           ~alt:"StackOverflow logo";
-        link "https://www.reddit.com/user/abathologist/"
-          ~title:"Reddit Profile"
-          ~src:"/media/reddit-logo.png"
-          ~alt:"Reddit Logo";
         link "https://www.linkedin.com/in/shonfeder"
           ~title:"LinkedIn Profile"
           ~src:"/media/linkedin-logo.png"
