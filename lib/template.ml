@@ -56,6 +56,10 @@ module Make (Config : Config.S) = struct
           ~title:"LinkedIn Profile"
           ~src:"/media/linkedin-logo.png"
           ~alt:"LinkedIn Logo";
+        link "https://en.wikipedia.org/wiki/User:Shonfeder"
+          ~title:"Wikipedia Profile"
+          ~src:"/media/wikipedia-logo.png"
+          ~alt:"Wikipedia Logo";
         link "mailto:shon.feder@gmail.com?Subject=Making+Contact"
           ~title:"Email Me"
           ~src:"/media/email-logo.png"
