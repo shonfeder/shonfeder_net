@@ -22,4 +22,5 @@ communication and participatory design. In my years of experience as a software
 engineer, I have learned to implement, document, and deploy the resulting
 programs reliably and efficiently.
 
-If you are a kindred spirit, I'd be happy to hear from you!
+If you are a kindred spirit or prospective employer, I'd be happy to hear from
+you!
