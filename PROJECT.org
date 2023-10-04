@@ -32,6 +32,7 @@ git pull
 If only static content has been updated, you're done. Otherwise
 
 #+BEGIN_SRC sh
+opam install .
 sudo systemctl restart shonfeder_net.service
 #+END_SRC
 
