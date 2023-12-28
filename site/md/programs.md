@@ -36,14 +36,22 @@
 
 # OSS Contributions
 
-## [omd](https://github.com/ocaml/omd): extensible Markdown library and tool in pure OCaml
+## [quint](https://github.com/informalsystems/quint): A specification language with modern tooling based on the temporal logic of actions (TLA)
+
+- Technical Project Lead of [Informal System's Apalache team](https://apalache.informal.systems/).
+- Contributed to core design and implementation of the syntax, type system, and tooling.
+- Managed build and release infrastructure.
+- Documentation, maintenance, user support.
+- Authored algorithm specifications.
+
+## [omd](https://github.com/ocaml/omd): Extensible Markdown library and tool in pure OCaml
 
 - (Volunteer) maintainer
 - Have helped guide key design decisions since 2021
 
 ## [Apalache](https://github.com/informalsystems/apalache): A symbolic model checker for TLA+
 
-- Member of the Apalache dev team at [informal.systems](https://informal.systems/).
+- Member of the [Informal System's Apalache team](https://apalache.informal.systems/).
 - Contributed to implementation of the type system.
 - Build and release engineering.
 - Documentation drafting, maintaining, and editing.
@@ -72,6 +80,17 @@
 - Contributed to the parser for the VyOS configuration language.
 
 # Unpublished | WIP
+
+## [OooapI](https://github.com/XFFS/OooapI): OCaml of Open API
+
+- Generate OCaml client libraries from Open API specifications.
+- Implemented via [ppxlib](https://github.com/ocaml-ppx/ppxlib) and
+  [atd](https://github.com/ahrefs/atd), aiming for a robust, extensible, and
+  maintainable implementation derivation. *No fiddling with untyped templates.*
+
+## [Oopenai](https://github.com/XFFS/oopenai): An OCaml Library for Open AI's API
+
+- An unofficial OCaml client library for OpenAI's API.
 
 ## [ND Project](https://github.com/shonfeder/nd_project): A pedagogical web toy for learning Gentzen’s natural deduction
 
