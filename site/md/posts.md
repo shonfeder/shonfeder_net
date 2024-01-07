@@ -10,6 +10,15 @@
 >
 > (Martin Heidegger, *The Question Concerning Technology*)
 
+I write pretty regularly, and sometimes what I write feels polished or useful
+enough to warrant inclusion here.
+
+## [Using Menhir to parse into idiomatic JS (TypeScript) structures][5] -- 2024-01-07
+
+- OCaml offers some of the most advanced programming meta-language tools in
+  existence. This note records how to use some of those tools to write a parser
+  that can be used in preexisting JS/TypeScript projects.
+
 ## [Configuration Files in Terms of User Empowerment][3] -- 2020-11-30
 
 - An argument for safe, programmable configuration formats, based on a framing
@@ -27,6 +36,7 @@
 
 - A meditation on the difference between finishing and completing
 
+[5]: https://discuss.ocaml.org/t/using-menhir-to-parse-into-idiomatic-js-typescript-structures/13809
 [4]: https://shonfeder.github.io/themata/encyclopedia.html
 [3]: https://informal.systems/2020/10/28/configuration-file-formats/
 [2]: https://shonfeder.gitlab.io/ocaml_webapp/
