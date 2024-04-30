@@ -6,21 +6,26 @@
 >
 > (W.V.O. Quine, *Quiddities*)
 
-I study [programming](/programs) and [philosophy](/posts) and [work as a
-software engineer](/resume) at [informal.systems](https://informal.systems/).
+I [work as a software engineer](/resume) at [Tarides](https://tarides.com/) and
+I study [programming](/programs) and [philosophy](/posts).
 
-Guided by concern for the well being of the disadvantaged and for humanity's
-future, I work at applying what I can learn in my studies to benefit those in
-need of care.
+I approach my work from the perspectives of [programming language
+theory](https://en.wikipedia.org/wiki/Programming_language_theory), [critical
+theory](https://en.wikipedia.org/wiki/Critical_theory), and [communication
+theory](https://en.wikipedia.org/wiki/Communication_theory). With an academic
+background in philosophy and literary theory and years of industry experience, I
+aim to articulate coherent designs and evolve correct implementations that are
+responsive to our communities' needs. I pursue a methodology combining
+[systematic analysis][systematic analysis], [algebraic semiotics][algebraic
+semiotics], [compassionate communication][compassionate communication], and
+[participatory design][participatory design].
 
-I approach programming from the perspective of [Programming Language
-Theory](https://en.wikipedia.org/wiki/Programming_language_theory). Leveraging
-my training in philosophy and literary theory, I evolve coherent designs
-responsive to user's genuine needs. My methodology combines systematic analysis
-and type-driven modeling of the problem domain together with compassionate
-communication and participatory design. In my years of experience as a software
-engineer, I have learned to implement, document, and deploy the resulting
-programs reliably and efficiently.
+If you are a kindred spirit, I'd be happy to hear from you!
 
-If you are a kindred spirit or prospective employer, I'd be happy to hear from
-you!
+[systematic analysis]: https://en.wikipedia.org/wiki/Systems_analysis
+
+[algebraic semiotics]: https://en.wikipedia.org/wiki/Computational_semiotics
+
+[compassionate communication]: https://en.wikipedia.org/wiki/Nonviolent_Communication
+
+[participatory design]: https://en.wikipedia.org/wiki/Participatory_design
