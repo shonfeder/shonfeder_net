@@ -41,29 +41,19 @@ sudo systemctl restart shonfeder_net.service
 *** TODO Illustrative organization of how parts of my life connect on splash page
 *** TODO Link to gitlab
 *** TODO Consolidated feed of all relevant internet presence [/]
-- [ ] Twitter
-- [ ] Reddit
 - [ ] Github
 - [ ] Gitlab
 - [ ] Wikipedia
 - [ ] StackOverflow
-*** DONE Static resources
-*** DONE Navigation
-*** DONE Markdown rendering
-*** DONE Pages
-**** DONE Programs
-**** DONE Projects
-**** DONE Posts
-**** DONE Profile
-**** DONE Resume
-***** Embedded PDF
-***** Interactive, filterable resume
-*** DONE Proof read
 ** Server
+*** TODO Migrate to cmarkit for markdown
+*** TODO Migrate to dream for server
 *** TODO Set up caching
 *** TODO Set up HTTPS
+*** TODO Migrate to serving in a mirage unikernal
 ** Deployment
 *** DONE Deploy
+*** TODO Set up ocurrent pipeline to automate deployment when repo changes
 *** TODO Set up ci/cd so new updates to source are propagated to server automatically
 **** Monitor remote repo
 **** On changes to source, pull
@@ -71,8 +61,6 @@ sudo systemctl restart shonfeder_net.service
 **** Otherwise rebuild and restart
 - =opam intall .=
 - =sudo systemctl restart shonfeder_net.service=
-
 *** TODO Document
 *** TODO Set up DNS routing
 *** TODO Set up monitoring and alerts
-*** TODO Set up
