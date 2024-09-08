@@ -1,5 +1,3 @@
-open Core
-
 module Config : Config.S = struct
   open Config
   let author =

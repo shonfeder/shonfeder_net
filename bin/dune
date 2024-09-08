@@ -2,6 +2,6 @@
  (public_name shonfeder_net)
  (name main)
  (package shonfeder_net)
- (libraries shonfeder_net opium core_kernel omd tyxml tyxml-ppx logs logs.fmt)
+ (libraries shonfeder_net opium tyxml tyxml-ppx logs logs.fmt)
  (preprocess
   (pps ppx_deriving.std tyxml-ppx)))

@@ -1,13 +1,19 @@
-open! Core
 open Tyxml
 
 module Make (Config : Config.S) = struct
-  let current_year () = Time_float.(now () |> to_date ~zone:Zone.utc |> Date.year |> Int.to_string)
+  (* With reference to https://ocaml.org/cookbook/get-todays-date/stdlib *)
+  let current_year () =
+    ()
+    |> Unix.time
+    |> Unix.localtime
+    |> (fun {tm_year; _} -> tm_year + 1900)
+    |> Int.to_string
 
   type 'a fill =
     { content: 'a Html.elt
     ; title: string
     }
+
   open Html
 
   let logo ~current =
@@ -28,7 +34,7 @@ module Make (Config : Config.S) = struct
       ; link "resume"
       ]
     in
-    nav [ul (List.map ~f:(fun i -> li [i]) links)]
+    nav [ul (ListLabels.map ~f:(fun i -> li [i]) links)]
 
   let banner content = div ~a:[a_id "banner"] content
 
@@ -67,7 +73,7 @@ module Make (Config : Config.S) = struct
       ]
     in
     ul ~a:[a_class ["digital-presence"]]
-      (List.map ~f:(fun l -> li [l]) links)
+      (ListLabels.map ~f:(fun l -> li [l]) links)
 
   let signature =
     let%html cc_html =

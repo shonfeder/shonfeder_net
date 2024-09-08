@@ -1,5 +1,5 @@
 (library
  (name shonfeder_net)
- (libraries opium core_kernel cmarkit tyxml fpath)
+ (libraries opium cmarkit tyxml unix fpath)
  (preprocess
   (pps ppx_deriving.std tyxml-ppx)))

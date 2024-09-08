@@ -17,8 +17,6 @@
   (dune (>= 3.16))
 
   (ocaml (>= 4.14.0))
-  ;; inc to v13 once opium can support
-  (core_kernel (>= v0.12.0))
 
   (cmarkit (>= 0.3))
   (opium (>= 0.17.1))

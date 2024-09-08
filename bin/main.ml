@@ -1,4 +1,3 @@
-open! Core
 open Opium
 
 open Shonfeder_net
@@ -13,7 +12,7 @@ let add_pages app =
   let add_page app (route, page) =
     App.get route (fun _req -> () |> page |> Response.of_html |> Lwt.return) app
   in
-  List.fold ~f:add_page ~init:app (Content.pages ())
+  ListLabels.fold_left ~f:add_page ~init:app (Content.pages ())
 
 let log_reporter () = Lwt.return (Logs_fmt.reporter ())
 
