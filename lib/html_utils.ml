@@ -1,4 +1,3 @@
-open! Core_kernel
 open Tyxml
 
 let html_doc_to_string html =
@@ -12,7 +11,7 @@ type 'a unsafe_html = Unsafe_html of 'a Html.elt
 
 let attrs_of_assoc assoc =
   let f (attr, value) = Tyxml_html.Unsafe.string_attrib attr (Option.value value ~default:"") in
-  List.map ~f assoc
+  ListLabels.map ~f assoc
 
 let html_of_md : Omd.t -> 'a unsafe_html = fun md ->
   let rec override : Omd_representation.element -> string option = function

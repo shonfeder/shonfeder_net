@@ -1,4 +1,4 @@
-(lang dune 1.11)
+(lang dune 3.16)
 (generate_opam_files true)
 
 (name shonfeder_net)
@@ -14,11 +14,11 @@
  (synopsis "TODO")
  (description "TODO")
  (depends
-  (dune (and (>= 1.11.4) (< 2.0.0)))
+  (dune (>= 3.16))
 
-  (ocaml (>= 4.08.0))
+  (ocaml (>= 4.14.0))
   ;; inc to v13 once opium can support
-  (core_kernel (and (>= v0.12.0) (< v0.13.0)))
+  (core_kernel (>= v0.12.0))
 
   (opium (>= 0.17.1))
   (omd (>= 1.3.1))
