@@ -1,4 +1,4 @@
-open Core_kernel
+open Core
 
 module Config : Config.S = struct
   open Config

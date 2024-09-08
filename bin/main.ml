@@ -1,17 +1,17 @@
-open! Core_kernel
-open Opium.Std
+open! Core
+open Opium
 
 open Shonfeder_net
 
 let assets =
-  Middleware.static
+  Middleware.static_unix
     ~local_path:"./site/assets"
     ~uri_prefix:"/"
     ()
 
 let add_pages app =
   let add_page app (route, page) =
-    get route (fun _req -> `Html (page ()) |> respond') app
+    App.get route (fun _req -> () |> page |> Response.of_html |> Lwt.return) app
   in
   List.fold ~f:add_page ~init:app (Content.pages ())
 
@@ -28,7 +28,7 @@ let set_logger app =
 
 let app =
   App.empty
-  |> middleware assets
+  |> App.middleware assets
   |> add_pages
 
 let run () =

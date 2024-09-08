@@ -1,8 +1,8 @@
-open! Core_kernel
+open! Core
 open Tyxml
 
 module Make (Config : Config.S) = struct
-  let current_year () = Time.(now () |> to_date ~zone:Zone.utc |> Date.year |> Int.to_string)
+  let current_year () = Time_float.(now () |> to_date ~zone:Zone.utc |> Date.year |> Int.to_string)
 
   type 'a fill =
     { content: 'a Html.elt
@@ -19,7 +19,7 @@ module Make (Config : Config.S) = struct
 
   let nav page_id =
     let link dest =
-      let class_ = if dest = page_id then ["current"] else [] in
+      let class_ = if String.equal dest page_id then ["current"] else [] in
       a ~a:[a_href ("/" ^ dest); a_class class_] [txt dest] in
     let links =
       [ link "programs"
@@ -103,9 +103,7 @@ module Make (Config : Config.S) = struct
 
   let head' title' =
     let script =
-      script ~a:[ a_mime_type "text/javascript"
-                ; a_src "/js/script.js"
-                ] (txt "")
+      script ~a:[ a_src "/js/script.js" ] (txt "")
     in
     head (title (txt title'))
       [ link ~rel:[`Stylesheet] ~href:"/styles/style.css" ()
@@ -128,23 +126,21 @@ module Make (Config : Config.S) = struct
     let header = landing_header page_id in
     html (head' title') (body' header content)
 
-  type page_builder = string -> Fpath.t -> string
+  type 'a page_builder = string -> Fpath.t -> 'a Tyxml_html.elt
 
   let page_id_of_fpath path =
     Fpath.(base path |> rem_ext |> to_string)
 
-  let landing_page_of_file : page_builder =
+  let landing_page_of_file : _ page_builder =
     fun title file ->
     let page_id = page_id_of_fpath file in
-    let Unsafe_html content = Html_utils.of_md_file file in
+    let content = Html_utils.of_md_file file in
     landing_page page_id title [content]
-    |> Html_utils.html_doc_to_string
 
-  let page_of_file : page_builder =
+  let page_of_file : _ page_builder =
     fun title file ->
     let page_id = page_id_of_fpath file in
-    let Unsafe_html content = Html_utils.of_md_file file in
+    let content = Html_utils.of_md_file file in
     page page_id title [content]
-    |> Html_utils.html_doc_to_string
 
 end

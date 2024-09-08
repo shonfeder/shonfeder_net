@@ -20,8 +20,8 @@
   ;; inc to v13 once opium can support
   (core_kernel (>= v0.12.0))
 
+  (cmarkit (>= 0.3))
   (opium (>= 0.17.1))
-  (omd (>= 1.3.1))
   (tyxml (>= 4.3.0))
   (tyxml-ppx (>= 4.3.0))
   (logs (>= 0.7.0))

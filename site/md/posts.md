@@ -1,4 +1,5 @@
 <div class="expose">
+
 > … the essence of technology is by no means anything technological. Thus we shall
 > never experience our relationship to the essence of technology so long as we
 > merely conceive and push forward the technological, put up with it, or evade it.
@@ -10,7 +11,7 @@
 >
 > (Martin Heidegger, *The Question Concerning Technology*)
 
-I write pretty regularly, and sometimes what I write feels polished or useful
+I write sometimes, and sometimes what I write feels polished or useful
 enough to warrant inclusion here.
 
 ## [Using Menhir to parse into idiomatic JS (TypeScript) structures][5] -- 2024-01-07
