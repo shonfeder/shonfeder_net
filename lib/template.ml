@@ -9,11 +9,6 @@ module Make (Config : Config.S) = struct
     |> (fun {tm_year; _} -> tm_year + 1900)
     |> Int.to_string
 
-  type 'a fill =
-    { content: 'a Html.elt
-    ; title: string
-    }
-
   open Html
 
   let logo ~current =
@@ -132,21 +127,29 @@ module Make (Config : Config.S) = struct
     let header = landing_header page_id in
     html (head' title') (body' header content)
 
-  type 'a page_builder = string -> Fpath.t -> 'a Tyxml_html.elt
+  type page_builder = string -> Fpath.t -> Tyxml.Html.doc
+  (* type 'a page_builder = string -> Fpath.t -> 'a Tyxml_html.elt *)
 
   let page_id_of_fpath path =
     Fpath.(base path |> rem_ext |> to_string)
 
-  let landing_page_of_file : _ page_builder =
+  let html_of_md_file = fun path ->
+    In_channel.input_all
+    |> In_channel.with_open_text (Fpath.to_string path)
+    |> Cmarkit.Doc.of_string
+    |> Cmarkit_html.of_doc ~safe:false
+    |> fun x -> (Tyxml_html.Unsafe.data x)
+
+  let landing_page_of_file : page_builder =
     fun title file ->
     let page_id = page_id_of_fpath file in
-    let content = Html_utils.of_md_file file in
+    let content = html_of_md_file file in
     landing_page page_id title [content]
 
-  let page_of_file : _ page_builder =
+  let page_of_file : page_builder =
     fun title file ->
     let page_id = page_id_of_fpath file in
-    let content = Html_utils.of_md_file file in
+    let content = html_of_md_file file in
     page page_id title [content]
 
 end
