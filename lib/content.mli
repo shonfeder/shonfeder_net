@@ -1,1 +1,1 @@
-val pages : unit -> (string * (unit -> Tyxml.Html.doc)) list
+val pages : unit -> (string list * (unit -> Tyxml.Html.doc)) list

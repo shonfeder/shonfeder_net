@@ -1,5 +1,5 @@
 (test
  (name shonfeder_net)
- (libraries opium tyxml)
+ (libraries tyxml)
  (preprocess
   (pps ppx_deriving.std)))

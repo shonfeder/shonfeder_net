@@ -83,8 +83,8 @@ module Make (Config : Config.S) = struct
     let year = li ~a:[a_class ["current-year"]] [txt (current_year ())] in
     let author = li ~a:[a_class ["author-name"]] [txt Config.author.name] in
     let powered_by =
-      let link = a ~a:[a_href "https://github.com/rgrinberg/opium"] [txt "Opium"] in
-      li ~a:[a_id "powered-by"] [txt "Powered by "; link]
+      let link = a ~a:[a_href "https://ocsigen.org"] [txt "ocsigen"] in
+      li ~a:[a_id "built-with"] [txt "Built with by "; link]
     in
     ul ~a:[a_id "signature"]
       [ author
