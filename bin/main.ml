@@ -26,18 +26,31 @@ let set_logger () =
   Logs.set_level (Some Logs.Info);
   Logs.info (fun m -> m "Running")
 
-let run () =
-  (* TODO Need to parse args to allow setting the port *)
-  let port = 3000 in
+let main port verbose =
   add_services ();
   set_logger ();
   Ocsigen_server.start
+    ?veryverbose:verbose
     ~ports:([`All, port])
-    ~debugmode:true ~veryverbose:()
+    ~debugmode:true
+    ~command_pipe:"/tmp/ocsigenserver_command"
     [ Ocsigen_server.host ~port
         [ assets
         ; Eliom.run ()
         ]
     ]
 
-let () = run ()
+let usage_msg = "shonfeder_net [-verbose] [-port ]"
+let verbose = ref None
+let port = ref 3000
+
+let set_unit r = Arg.Unit (fun () -> r := Some ())
+
+let speclist =
+  [ "-verbose", set_unit verbose, "Output debug information"
+  ; "-port"   , Arg.Set_int port, "Output debug information"
+  ]
+
+let () =
+  Arg.parse speclist ignore usage_msg;
+  main !port !verbose
