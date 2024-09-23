@@ -36,3 +36,6 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/shonfeder/shonfeder_net.git"
+pin-depends: [
+  ["ocsigenserver.6.0.0" "git+https://github.com/shonfeder/ocsigenserver.git#init-all-on-start"]
+]

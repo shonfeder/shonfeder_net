@@ -1,5 +1,11 @@
 (library
  (name shonfeder_net)
- (libraries cmarkit eliom.server tyxml unix fpath)
+ (libraries
+  cmarkit
+  eliom.server
+  ocsigenserver.ext.staticmod
+  tyxml
+  unix
+  fpath)
  (preprocess
   (pps ppx_deriving.std tyxml-ppx)))

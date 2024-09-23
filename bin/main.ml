@@ -2,23 +2,9 @@ open Shonfeder_net
 
 let assets = Staticmod.run ~dir:"./site/assets" ()
 
-let add_services () =
-  let add_service (route, page) =
-    let service = Eliom_service.create
-        ~path:(Eliom_service.Path route)
-        ~meth:(Eliom_service.Get (Eliom_parameter.unit))
-        ()
-    in
-    (* TODO Replace with Eliom_registration.Html and services *)
-    Eliom_registration.Html_text.register ~service
-      (fun () () ->
-         ()
-         |> page
-         |> Format.asprintf "%a" (Tyxml.Html.pp ())
-         |> Lwt.return)
-  in
-  Content.pages ()
-  |> List.iter add_service
+(* TODO: Provide content on thes 404 *)
+let not_found = Staticmod.run ~code:"40." ~dest:"./site/assets/error.html" ()
+
 
 let set_logger () =
   let reporter = Logs_fmt.reporter () in
@@ -27,8 +13,10 @@ let set_logger () =
   Logs.info (fun m -> m "Running")
 
 let main port verbose =
-  add_services ();
+  (* AHH! Doesn't work :( *)
+  Eliom_service.register_eliom_module "shonfeder_net" Content.init;
   set_logger ();
+  (* TODO 404 *)
   Ocsigen_server.start
     ?veryverbose:verbose
     ~ports:([`All, port])
@@ -37,6 +25,7 @@ let main port verbose =
     [ Ocsigen_server.host ~port
         [ assets
         ; Eliom.run ()
+        ; not_found
         ]
     ]
 
