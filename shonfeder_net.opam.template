@@ -1,3 +1,0 @@
-pin-depends: [
-  ["ocsigenserver.6.0.0" "git+https://github.com/shonfeder/ocsigenserver.git#init-all-on-start"]
-]

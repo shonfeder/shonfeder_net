@@ -10,8 +10,7 @@ module Make (Config : Config.S) = struct
     |> (fun {tm_year; _} -> tm_year + 1900)
     |> Int.to_string
 
-  open Eliom_content.Html.D
-
+  (* A page is a simple service that takes no parameters. *)
   type page = (unit, unit, Service.get, Service.att, Service.non_co, Service.non_ext,
                Service.reg, [ `WithoutSuffix ], unit, unit, Service.non_ocaml) Service.t
 
@@ -20,6 +19,8 @@ module Make (Config : Config.S) = struct
     ; name: string
     ; service: page
     }
+
+  open Eliom_content.Html.D
 
   (* Helpers *)
   let extern url = Service.(extern ~prefix:url ~path:[] ~meth:(Get Param.unit)  ())
@@ -43,6 +44,13 @@ module Make (Config : Config.S) = struct
   let posts    = simple "Posts" "posts"
   let resume   = simple "Resume" "resume"
 
+  let sub_pages =
+    [ projects
+    ; programs
+    ; posts
+    ; resume
+    ]
+
   let logo ~current =
     let classes = if current then ["current"] else [] in
     a ~service:home.service
@@ -56,15 +64,9 @@ module Make (Config : Config.S) = struct
   let nav page_id =
     let link {service; name; _} =
       let class_ = if String.equal name page_id then ["current"] else [] in
-      a ~service ~a:[a_class class_] [txt name] () in
-    let links =
-      [ link projects
-      ; link programs
-      ; link posts
-      ; link resume
-      ]
+      a ~service ~a:[a_class class_] [txt name] ()
     in
-    nav [ul (ListLabels.map ~f:(fun i -> li [i]) links)]
+    nav [ul (List.map (fun p -> li [link p]) sub_pages)]
 
   let banner content = div ~a:[a_id "banner"] content
 
@@ -134,7 +136,8 @@ module Make (Config : Config.S) = struct
       [ author
       ; year
       ; cc_notice
-      ; powered_by ]
+      ; powered_by
+      ]
 
   let footer' () =
     footer ~a:[a_id "footer"]
@@ -169,7 +172,6 @@ module Make (Config : Config.S) = struct
     let header = landing_header page_id in
     html (head' title') (body' header content)
 
-
   let html_of_md_file = fun path ->
     Logs.info (fun f -> f "Loading file from disk %a" Fpath.pp path);
     In_channel.input_all
@@ -179,8 +181,8 @@ module Make (Config : Config.S) = struct
     |> fun x -> (Unsafe.data x)
 
   let fpath =
-  let md_dir = Fpath.v "./site/md" in
-  fun name -> Fpath.(md_dir / name |> add_ext "md")
+    let md_dir = Fpath.v "./site/md" in
+    fun name -> Fpath.(md_dir / name |> add_ext "md")
 
   let landing_page_of_file {title; name; _} =
     let content = html_of_md_file (fpath name) in
@@ -192,12 +194,9 @@ module Make (Config : Config.S) = struct
 
   let contentes =
     let tbl = Hashtbl.create 5 in
-    let add_page service handler = Hashtbl.add tbl service.name (lazy (handler service)) in
-    add_page home landing_page_of_file;
-    add_page projects page_of_file;
-    add_page programs page_of_file;
-    add_page posts page_of_file;
-    add_page resume page_of_file;
+    let add_page handler service = Hashtbl.add tbl service.name (lazy (handler service)) in
+    add_page landing_page_of_file home;
+    List.iter (add_page page_of_file) sub_pages;
     tbl
 
   let register_page {service; name; _} =
@@ -208,10 +207,6 @@ module Make (Config : Config.S) = struct
 
   let () =
     Logs.info (fun f -> f "Starting service registration");
-    register_page home;
-    register_page projects;
-    register_page programs;
-    register_page posts;
-    register_page resume;
+    List.iter register_page (home :: sub_pages);
     Logs.info (fun f -> f "Service registration complete")
 end
