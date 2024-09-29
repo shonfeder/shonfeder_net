@@ -1,11 +1,6 @@
 module Service = Eliom_service
 module Param = Eliom_parameter
 
-type page =
-  (unit, unit, Service.get, Service.att, Service.non_co, Service.non_ext,
-   Service.reg, [ `WithoutSuffix ], unit, unit, Service.non_ocaml)
-    Service.t
-
 module Make (Config : Config.S) = struct
   (* With reference to https://ocaml.org/cookbook/get-todays-date/stdlib *)
   let current_year () =
@@ -17,38 +12,56 @@ module Make (Config : Config.S) = struct
 
   open Eliom_content.Html.D
 
+  type page = (unit, unit, Service.get, Service.att, Service.non_co, Service.non_ext,
+               Service.reg, [ `WithoutSuffix ], unit, unit, Service.non_ocaml) Service.t
+
+  type page_service =
+    { title : string
+    ; name: string
+    ; service: page
+    }
+
   (* Helpers *)
   let extern url = Service.(extern ~prefix:url ~path:[] ~meth:(Get Param.unit)  ())
-  let simple name = Service.(create ~name ~path:(Path [name]) ~meth:(Get Param.unit) ())
-  let uri path = make_uri ~service:(Service.static_dir ()) path
+  let asset path = make_uri ~service:(Service.static_dir ()) path
   let extern_uri url = make_uri ~service:(extern url) ()
 
-  (* Services *)
-  let home     = Service.(create ~name:"home" ~path:(Path []) ~meth:(Get Param.unit) ())
-  let projects = simple "projects"
-  let programs = simple "programs"
-  let posts    = simple "posts"
-  let resume   = simple "resume"
+  (* A simple service, serving a page *)
+  let simple title name =
+    { name
+    ; title
+    ; service = Service.(create ~name ~path:(Path [name]) ~meth:(Get Param.unit) ())
+    }
+
+  let home     =
+    { title = "Home Page"
+    ; name = "home"
+    ; service = Service.(create ~name:"home" ~path:(Path []) ~meth:(Get Param.unit) ())
+    }
+  let projects = simple "Projects" "projects"
+  let programs = simple "Programs" "programs"
+  let posts    = simple "Posts" "posts"
+  let resume   = simple "Resume" "resume"
 
   let logo ~current =
     let classes = if current then ["current"] else [] in
-    a ~service:home
+    a ~service:home.service
       [img
          ~a:[a_id "logo"; a_class classes]
          ~alt:"Synechist Logo"
-         ~src:(uri ["media"; "logo.png"])
+         ~src:(asset ["media"; "logo.png"])
          ()]
       ()
 
   let nav page_id =
-    let link service name =
+    let link {service; name; _} =
       let class_ = if String.equal name page_id then ["current"] else [] in
       a ~service ~a:[a_class class_] [txt name] () in
     let links =
-      [ link projects "projects"
-      ; link programs "programs"
-      ; link posts "posts"
-      ; link resume "resume"
+      [ link projects
+      ; link programs
+      ; link posts
+      ; link resume
       ]
     in
     nav [ul (ListLabels.map ~f:(fun i -> li [i]) links)]
@@ -65,7 +78,7 @@ module Make (Config : Config.S) = struct
   (* External services *)
   let social_presence_links () =
     let link ~alt ~title ~src url =
-      let src = uri src in
+      let src = asset src in
       a
         ~service:(extern url)
         ~a:[a_title title; a_target "_blank"]
@@ -134,9 +147,10 @@ module Make (Config : Config.S) = struct
     section ~a:[a_class ["main"]] content
 
   let head' title' =
+    let title' = Printf.sprintf "%s's %s" Config.author.name title' in
     head (title (txt title'))
-      [ css_link ~uri:(uri ["styles"; "style.css"]) ()
-      ; js_script ~uri:(uri ["js"; "script.js"]) ()
+      [ css_link ~uri:(asset ["styles"; "style.css"]) ()
+      ; js_script ~uri:(asset ["js"; "script.js"]) ()
       ; meta ~a:[a_charset "utf-8"] ()
       ; meta ~a:[a_name "viewport"; a_content "width=device-width, initial-scale=1"] ()
       ]
@@ -155,28 +169,49 @@ module Make (Config : Config.S) = struct
     let header = landing_header page_id in
     html (head' title') (body' header content)
 
-  type page_builder = string -> Fpath.t -> doc
-
-  let page_id_of_fpath path =
-    Fpath.(base path |> rem_ext |> to_string)
 
   let html_of_md_file = fun path ->
+    Logs.info (fun f -> f "Loading file from disk %a" Fpath.pp path);
     In_channel.input_all
     |> In_channel.with_open_text (Fpath.to_string path)
     |> Cmarkit.Doc.of_string
     |> Cmarkit_html.of_doc ~safe:false
     |> fun x -> (Unsafe.data x)
 
-  let landing_page_of_file : page_builder =
-    fun title file ->
-    let page_id = page_id_of_fpath file in
-    let content = html_of_md_file file in
-    landing_page page_id title [content]
+  let fpath =
+  let md_dir = Fpath.v "./site/md" in
+  fun name -> Fpath.(md_dir / name |> add_ext "md")
 
-  let page_of_file : page_builder =
-    fun title file ->
-    let page_id = page_id_of_fpath file in
-    let content = html_of_md_file file in
-    page page_id title [content]
+  let landing_page_of_file {title; name; _} =
+    let content = html_of_md_file (fpath name) in
+    landing_page name title [content]
 
+  let page_of_file {title; name; _} =
+    let content = html_of_md_file (fpath name) in
+    page name title [content]
+
+  let contentes =
+    let tbl = Hashtbl.create 5 in
+    let add_page service handler = Hashtbl.add tbl service.name (lazy (handler service)) in
+    add_page home landing_page_of_file;
+    add_page projects page_of_file;
+    add_page programs page_of_file;
+    add_page posts page_of_file;
+    add_page resume page_of_file;
+    tbl
+
+  let register_page {service; name; _} =
+    Eliom_registration.Html.register ~service begin
+      fun () () ->
+        Lwt.return @@ Lazy.force @@ Hashtbl.find contentes name
+    end
+
+  let () =
+    Logs.info (fun f -> f "Starting service registration");
+    register_page home;
+    register_page projects;
+    register_page programs;
+    register_page posts;
+    register_page resume;
+    Logs.info (fun f -> f "Service registration complete")
 end

@@ -39,27 +39,39 @@ sudo systemctl restart shonfeder_net.service
 * Tasks
 ** Content
 *** TODO Illustrative organization of how parts of my life connect on splash page
-*** TODO Link to gitlab
+*** TODO Fetch activity from all different sources
 *** TODO Consolidated feed of all relevant internet presence [/]
 - [ ] Github
-- [ ] Gitlab
 - [ ] Wikipedia
 - [ ] StackOverflow
+- [ ] Mastadon
+*** TODO Host notes etc. from home page?
 ** Server
-*** TODO Migrate to cmarkit for markdown
-*** TODO Migrate to dream for server
+*** DONE Use cmarkit for parsing md
+*** DONE Drop dep on core
+*** DONE Migrate to ocsigen for server
+https://github.com/ocsigen/ocsigenserver/pull/238
+*** TODO Set up https
+dns-certify        --          MirageOS let's encrypt certificate retrieval
+dns-cli            --          Unix command line utilities using uDNS
+github-hooks       --          GitHub API web hook listener library
+github-hooks-unix  --          GitHub API web hook listener library
+letsencrypt        --          ACME implementation in OCaml
+letsencrypt-app    --          ACME implementation in OCaml
+letsencrypt-dns    --          DNS solver for ACME implementation in OCaml
+letsencrypt-mirage --          ACME implementation in OCaml for MirageOS
 *** TODO Set up caching
-*** TODO Set up HTTPS
 *** TODO Migrate to serving in a mirage unikernal
+*** TODO Move to org-mode for content?
 ** Deployment
 *** DONE Deploy
-*** TODO Set up ocurrent pipeline to automate deployment when repo changes
 *** TODO Set up ci/cd so new updates to source are propagated to server automatically
 **** Monitor remote repo
 **** On changes to source, pull
+**** Install systemd service
 **** If change is in =./site= dir, finished
 **** Otherwise rebuild and restart
-- =opam intall .=
+- =opam install .=
 - =sudo systemctl restart shonfeder_net.service=
 *** TODO Document
 *** TODO Set up DNS routing

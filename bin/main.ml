@@ -1,10 +1,19 @@
 open Shonfeder_net
 
-let assets = Staticmod.run ~dir:"./site/assets" ()
+let assets = Staticmod.run ~cache:604800 ~dir:"./site/assets" ()
 
 (* TODO: Provide content on thes 404 *)
 let not_found = Staticmod.run ~code:"40." ~dest:"./site/assets/error.html" ()
 
+module Config : Config.S = struct
+  open Config
+  let author =
+    { name = "Shon Feder"
+    ; email = "shon.feder@gmail.com"
+    }
+end
+
+module _ = Template.Make (Config)
 
 let set_logger () =
   let reporter = Logs_fmt.reporter () in
@@ -13,10 +22,7 @@ let set_logger () =
   Logs.info (fun m -> m "Running")
 
 let main port verbose =
-  (* AHH! Doesn't work :( *)
-  Eliom_service.register_eliom_module "shonfeder_net" Content.init;
   set_logger ();
-  (* TODO 404 *)
   Ocsigen_server.start
     ?veryverbose:verbose
     ~ports:([`All, port])
@@ -29,7 +35,7 @@ let main port verbose =
         ]
     ]
 
-let usage_msg = "shonfeder_net [-verbose] [-port ]"
+let usage_msg = "shonfeder_net [-verbose] [-port=3000]"
 let verbose = ref None
 let port = ref 3000
 
