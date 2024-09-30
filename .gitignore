@@ -2,3 +2,4 @@
 _build
 _opam
 .merlin
+/shonfeder_net.service
