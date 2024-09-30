@@ -24,16 +24,12 @@ On my "production" VPS, the server is run as a systemd unit, defined in
 - To enable/disable the service :: =sudo systemctl (enable|disable) shonfeder_net.service=
 
 ** Updating
+
 #+BEGIN_SRC sh
 cd ~/shonfeder_net
 git pull
-#+END_SRC
-
-If only static content has been updated, you're done. Otherwise
-
-#+BEGIN_SRC sh
 opam install .
-sudo systemctl restart shonfeder_net.service
+sudo systemctl restart shonfeder_net
 #+END_SRC
 
 * Tasks
