@@ -1,15 +1,13 @@
 <div class="expose">
 
-> … the essence of technology is by no means anything technological. Thus we shall
-> never experience our relationship to the essence of technology so long as we
-> merely conceive and push forward the technological, put up with it, or evade it.
-> Everywhere we remain unfree and chained to technology, whether we passionately
-> affirm or deny it. But we are delivered over to it in the worst possible way
-> when we regard it as something neutral; for this conception of it, to which
-> today we particularly like to do homage, makes us utterly blind to the essence
-> of technology.
->
-> (Martin Heidegger, *The Question Concerning Technology*)
+> But surpassing all stupendous inventions, what sublimity of mind was his who
+> dreamed of finding means to communicate his deepest thoughts to any other
+> person, though distant by mighty intervals of place and time! Of talking with
+> those who are in India; of speaking to those who are not yet born and will not
+> be born for a thousand or ten thousand years; and with what facility, by the
+> different arrangements of twenty characters upon a page!
+> 
+> (Galileo Galilei, *Dialogue Concerning the Two Chief World Systems*)
 
 I write sometimes, and sometimes what I write feels polished or useful
 enough to warrant inclusion here.
