@@ -130,7 +130,7 @@ module Make (Config : Config.S) = struct
     let author = li ~a:[a_class ["author-name"]] [txt Config.author.name] in
     let powered_by =
       let link = a ~service:(extern "https://ocsigen.org") [txt "ocsigen"] () in
-      li ~a:[a_id "built-with"] [txt "Built with by "; link]
+      li ~a:[a_id "built-with"] [txt "Built with "; link]
     in
     ul ~a:[a_id "signature"]
       [ author
