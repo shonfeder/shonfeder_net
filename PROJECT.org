@@ -23,6 +23,32 @@ On my "production" VPS, the server is run as a systemd unit, defined in
 - To start/stop the service :: =sudo systemctl (start|stop) shonfeder_net=
 - To enable/disable the service :: =sudo systemctl (enable|disable) shonfeder_net.service=
 
+** Caddy reverse proxy
+
+[[https://caddyserver.com/][Caddy]] server is run as a reverse proxy, providing TLS certification and caching.
+To start, caddy is installed using apt.
+
+Caddy is managev by systemd, according to the unit file is located
+=lib/systemd/system/caddy.service=.
+
+*** It is necessary to download or build a version of caddy that has the cache module enabled
+
+- Install xcaddy :: https://github.com/caddyserver/xcaddy?tab=readme-ov-file#install
+- Build caddy with cache support ::
+  #+begin_src sh
+  xcaddy build $CURRENT_CADDY_VERSION --with github.com/caddyserver/cache-handler
+  #+end_src
+- Do a package divert so the custom build will work alongside the other
+  installed caddy functions ::
+  https://caddyserver.com/docs/build#package-support-files-for-custom-builds-for-debianubunturaspbian
+
+Alternatively, we could have built and hosted a binary.
+
+
+*** The configuration of caddy is via the Caddyfile
+
+The caddy file should be moved to /etc/caddy/Caddyfile
+
 ** Updating
 
 #+BEGIN_SRC sh
