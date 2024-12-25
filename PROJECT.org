@@ -44,10 +44,9 @@ Caddy is managev by systemd, according to the unit file is located
 
 Alternatively, we could have built and hosted a binary.
 
-
 *** The configuration of caddy is via the Caddyfile
 
-The caddy file should be moved to /etc/caddy/Caddyfile
+The caddy file should be moved to =/etc/caddy/Caddyfile=
 
 ** Updating
 
@@ -73,16 +72,8 @@ sudo systemctl restart shonfeder_net
 *** DONE Drop dep on core
 *** DONE Migrate to ocsigen for server
 https://github.com/ocsigen/ocsigenserver/pull/238
-*** TODO Set up https
-dns-certify        --          MirageOS let's encrypt certificate retrieval
-dns-cli            --          Unix command line utilities using uDNS
-github-hooks       --          GitHub API web hook listener library
-github-hooks-unix  --          GitHub API web hook listener library
-letsencrypt        --          ACME implementation in OCaml
-letsencrypt-app    --          ACME implementation in OCaml
-letsencrypt-dns    --          DNS solver for ACME implementation in OCaml
-letsencrypt-mirage --          ACME implementation in OCaml for MirageOS
-*** TODO Set up caching
+*** DONE Set up https
+*** DONE Set up caching
 *** TODO Migrate to serving in a mirage unikernal
 *** TODO Move to org-mode for content?
 ** Deployment

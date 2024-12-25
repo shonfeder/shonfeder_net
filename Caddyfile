@@ -3,7 +3,8 @@
 }
 
 shonfeder.net {
-    cache
+    cache {
+      ttl { 240s }
+    }
     reverse_proxy :9000
-    ttl { 240s }
 }
