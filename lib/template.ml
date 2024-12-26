@@ -23,9 +23,8 @@ module Make (Config : Config.S) = struct
   open Eliom_content.Html.D
 
   (* Helpers *)
-  let extern url = Service.(extern ~prefix:url ~path:[] ~meth:(Get Param.unit)  ())
+  let extern ?(path=[]) base = Service.(extern ~prefix:base ~path ~meth:(Get Param.unit)  ())
   let asset path = make_uri ~service:(Service.static_dir ()) path
-  let extern_uri url = make_uri ~service:(extern url) ()
 
   (* A simple service, serving a page *)
   let simple title name =
@@ -79,32 +78,43 @@ module Make (Config : Config.S) = struct
 
   (* External services *)
   let social_presence_links () =
-    let link ~alt ~title ~src url =
+    let link ~base ~path ~alt ~title ~src =
       let src = asset src in
       a
-        ~service:(extern url)
+        ~service:(extern base ~path)
         ~a:[a_title title; a_target "_blank"]
         [img ~a:[a_class ["social-media-link"]] ~alt ~src ()]
         ()
     in
     let links =
-      [ link "https://github.com/shonfeder"
+      [ link
+          ~base:"https://github.com"
+          ~path:["shonfeder"]
           ~title:"Github Profile"
           ~src:["media"; "github-logo.png"]
-          ~alt:"GitHub logo";
-        link "http://stackoverflow.com/users/1187277/shon-feder"
+          ~alt:"GitHub logo"
+          ;
+        link
+          ~base:"http://stackoverflow.com"
+          ~path:["users"; "1187277"; "shon-feder"]
           ~title:"StackOverflow Profile"
           ~src:["media"; "stackoverflow-logo.png"]
           ~alt:"StackOverflow logo";
-        link "https://www.linkedin.com/in/shonfeder"
+        link
+          ~base:"https://www.linkedin.com/"
+          ~path:["in"; "shonfeder"]
           ~title:"LinkedIn Profile"
           ~src:["media"; "linkedin-logo.png"]
           ~alt:"LinkedIn Logo";
-        link "https://en.wikipedia.org/wiki/User:Shonfeder"
+        link
+          ~base:"https://en.wikipedia.org/"
+          ~path:["wiki"; "User:Shonfeder"]
           ~title:"Wikipedia Profile"
           ~src:["media"; "wikipedia-logo.png"]
           ~alt:"Wikipedia Logo";
-        link "mailto:shon.feder@gmail.com?Subject=Making+Contact"
+        link
+          ~base:"mailto:shon.feder@gmail.com?Subject=Making+Contact"
+          ~path:[]
           ~title:"Email Me"
           ~src:["media"; "email-logo.png"]
           ~alt:"Email Icon";
@@ -119,9 +129,9 @@ module Make (Config : Config.S) = struct
         ~service:(extern "https://creativecommons.org/licenses/by-sa/4.0")
         [ img
             ~a:[ a_title "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
-               ; a_style "border-width:0"]
-            ~alt:"Creative Commons License"
-            ~src:(extern_uri "https://i.creativecommons.org/l/by-sa/4.0/80x15.png")
+               ; a_style "border-width:0;width:4em"]
+            ~alt:"Creative Commons BY-SA License"
+            ~src:(asset ["media"; "cc-by-sa.png"] )
             ()]
         ()
     in

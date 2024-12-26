@@ -40,14 +40,14 @@ contribute to communities.
 
 ## [ICFP 2020 OCaml Workshop Organizing Committee Member](https://icfp20.sigplan.org/home/ocaml-2020): Supporting the research community
 
-- 2020.
+- 2020 .
 - I volunteered for the organizing committee for the 2020 ICFP OCaml Workshop.
   I helped transcribe video presentations in the service of accessibility and
   assisted in facilitating talks.
 
 ## [Coding Made Easy at IS 62 K (Ditmas)](https://www.newyorkcares.org/projects/coding-made-easy-62-k-ditmas-7): Education in programmatic literacy
 
-- 2016.
+- 2016 .
 - A [New York Cares](https://www.newyorkcares.org/) project partnered with the
 after-school program at Ditmas Junior High.
 - Over 14 weeks, we supported students exploring basic programming

@@ -1,29 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Advent+Pro:200);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Advent + Pro:200);
+@import url(https://fonts.googleapis.com/css?family=Open + Sans);
 
 /************/
 /* DOCUMENT */
 /************/
 
 html {
-  font-size : 1.1em;
+  font-size: 1.1em;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-left: 2vh;
   padding-right: 2vh;
 }
 
 h1 {
-  font-size : 2em;
-  margin-top : 35px;
-  font-family: 'Advent Pro', sans-serif;
+  font-size: 2em;
+  margin-top: 35px;
+  font-family: "Advent Pro", sans-serif;
 }
 
 h2 {
-  font-size : 1.4em;
-  font-weight : 500;
+  font-size: 1.4em;
+  font-weight: 500;
 }
 
 a {
@@ -39,8 +39,8 @@ a:active {
   color: #b0004a;
 }
 
-blockquote{
-  display:block;
+blockquote {
+  display: block;
   padding-left: 0.8em;
   padding-right: 0.8em;
   margin-left: auto;
@@ -48,7 +48,7 @@ blockquote{
   max-width: 60vh;
   padding-top: 0.5em;
   position: relative;
-  font-size : .9em;
+  font-size: 0.9em;
   text-align: justify;
 }
 
@@ -58,12 +58,12 @@ blockquote:before {
   font-size: 2.5em;
   font-weight: bold;
   color: #999;
-  
+
   /*Positioning*/
   position: absolute;
   left: -0.2em;
   top: 0.4em;
-  color : lightgray
+  color: lightgray;
 }
 
 /**********/
@@ -71,13 +71,13 @@ blockquote:before {
 /**********/
 
 header {
-  position : fixed;
-  width : 100%;
-  left : 0px;
-  top : 0px;
-  height : 120px;
-  background-color : white;
-  z-index : 9999;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 120px;
+  background-color: white;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,15 +90,15 @@ header {
 }
 
 #logo {
-  width : 76px;
-} 
+  width: 76px;
+}
 
 #header.active {
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 #author-title {
-  margin-left: .5em;
+  margin-left: 0.5em;
   margin-bottom: 0;
 }
 
@@ -116,12 +116,12 @@ nav > ul {
 }
 
 nav > ul > li {
-  margin-left: .2em;
-  margin-right: .2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
 }
 
 nav a {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
   font-weight: 600;
   font-size: 1.1em;
   color: #464646;
@@ -132,7 +132,6 @@ nav .current {
   border-bottom-color: #b0004a;
   border-bottom-style: double;
   border-bottom-width: 3px;
-
 }
 
 #logo.current {
@@ -153,46 +152,44 @@ nav .current {
 }
 
 #statement + * {
-  clear : both;
+  clear: both;
 }
 
 #bio {
-  max-width : 40%;
-  min-width : 300px;
-  float : left;
+  max-width: 40%;
+  min-width: 300px;
+  float: left;
 }
 
 #epigraph {
-  float : right;
-  width : 400px;
-  color : gray; 
-  padding-top : 1px;
-  padding-right : 150px;
-  text-align : justify;
+  float: right;
+  width: 400px;
+  color: gray;
+  padding-top: 1px;
+  padding-right: 150px;
+  text-align: justify;
 }
 
 #projects {
-  width : 53%; 
+  width: 53%;
 }
 
 #projects h3 {
-  margin-left : 25px;
+  margin-left: 25px;
 }
-
 
 /**********/
 /* FOOTER */
 /**********/
 
 footer {
-  position : fixed;
-  bottom : 0px;
-  left : 0px;
-  background-color : white;
-  padding-top : 15px;
-  margin-bottom : 0;
-  padding-bottom : 0;
-  width : 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+  padding-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
   max-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -200,17 +197,16 @@ footer {
 }
 
 #footer.active {
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .social-media-link {
-  max-width : 35px;
+  max-width: 35px;
 }
 
-
 .digital-presence {
-  padding : 0;
-  margin : 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -218,22 +214,22 @@ footer {
 }
 
 .digital-presence > * {
-  padding : 0;
-  margin : 0;
+  padding: 0;
+  margin: 0;
 }
 
 .digital-presence {
-  list-style-type : none;
+  list-style-type: none;
 }
 
 .digital-presence > li {
-  display : flex;
+  display: flex;
   padding: 5px;
 }
 
 #signature {
   display: flex;
-  font-size : 0.8em;
+  font-size: 0.8em;
   list-style-type: none;
 
   flex-direction: row;
@@ -242,8 +238,9 @@ footer {
 }
 
 #signature > li + li::before {
-  content: '\2022';
-  padding: .5em;
+  content: "\2022";
+  padding: 0.5em;
+  vertical-align: top;
 }
 
 /*********/
@@ -272,16 +269,16 @@ footer {
 }
 
 .expose ul > li::before {
-  content: '\25B9';
-  margin-right: .5em;
+  content: "\25B9";
+  margin-right: 0.5em;
   margin-left: -1em;
   color: #b0004a;
-  font-weight: 800
+  font-weight: 800;
 }
 
 #resume {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh; 
+  height: 100vh;
 }
