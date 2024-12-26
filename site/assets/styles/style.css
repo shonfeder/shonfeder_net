@@ -1,16 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Advent + Pro:200);
-@import url(https://fonts.googleapis.com/css?family=Open + Sans);
-
 /************/
 /* DOCUMENT */
 /************/
 
 html {
   font-size: 1.1em;
+  font-family: Verdana, sans-serif;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   padding-left: 2vh;
   padding-right: 2vh;
 }
@@ -18,7 +15,6 @@ body {
 h1 {
   font-size: 2em;
   margin-top: 35px;
-  font-family: "Advent Pro", sans-serif;
 }
 
 h2 {
@@ -121,7 +117,6 @@ nav > ul > li {
 }
 
 nav a {
-  font-family: "Advent Pro", sans-serif;
   font-weight: 600;
   font-size: 1.1em;
   color: #464646;
