@@ -55,3 +55,67 @@ Archived entries from file /home/sf/Sync/sites/shonfeder_net/PROJECT.org
 :ARCHIVE_CATEGORY: PROJECT
 :ARCHIVE_TODO: DONE
 :END:
+
+* DONE Use cmarkit for parsing md
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:05
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Server
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Drop dep on core
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:05
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Server
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Migrate to ocsigen for server
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:06
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Server
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+https://github.com/ocsigen/ocsigenserver/pull/238
+
+* DONE Set up https
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:06
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Server
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Set up caching
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:06
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Server
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Deploy
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:06
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Deployment
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Set up DNS routing
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-30 Sat 12:06
+:ARCHIVE_FILE: ~/Repos/shonfeder/shonfeder_net/PROJECT.org
+:ARCHIVE_OLPATH: Tasks/Deployment
+:ARCHIVE_CATEGORY: PROJECT
+:ARCHIVE_TODO: DONE
+:END:

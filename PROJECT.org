@@ -68,16 +68,12 @@ sudo systemctl restart shonfeder_net
 - [ ] Mastadon
 *** TODO Host notes etc. from home page?
 ** Server
-*** DONE Use cmarkit for parsing md
-*** DONE Drop dep on core
-*** DONE Migrate to ocsigen for server
-https://github.com/ocsigen/ocsigenserver/pull/238
-*** DONE Set up https
-*** DONE Set up caching
 *** TODO Migrate to serving in a mirage unikernal
 *** TODO Move to org-mode for content?
+*** TODO Move out of US hosting
+** Code
+*** TODO move out of GitThub
 ** Deployment
-*** DONE Deploy
 *** TODO Set up ci/cd so new updates to source are propagated to server automatically
 **** Monitor remote repo
 **** On changes to source, pull
@@ -87,5 +83,4 @@ https://github.com/ocsigen/ocsigenserver/pull/238
 - =opam install .=
 - =sudo systemctl restart shonfeder_net.service=
 *** TODO Document
-*** TODO Set up DNS routing
 *** TODO Set up monitoring and alerts
