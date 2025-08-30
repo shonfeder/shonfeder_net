@@ -101,13 +101,13 @@ module Make (Config : Config.S) = struct
           ~src:["media"; "stackoverflow-logo.png"]
           ~alt:"StackOverflow logo";
         link
-          ~base:"https://www.linkedin.com/"
+          ~base:"https://www.linkedin.com"
           ~path:["in"; "shonfeder"]
           ~title:"LinkedIn Profile"
           ~src:["media"; "linkedin-logo.png"]
           ~alt:"LinkedIn Logo";
         link
-          ~base:"https://en.wikipedia.org/"
+          ~base:"https://en.wikipedia.org"
           ~path:["wiki"; "User:Shonfeder"]
           ~title:"Wikipedia Profile"
           ~src:["media"; "wikipedia-logo.png"]
